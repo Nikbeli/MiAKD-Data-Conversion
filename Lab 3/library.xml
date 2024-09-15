@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="library.xslt"?>
+<?xml-model href="library.dtd" type="applecation/xml-dtd"?>
+<library xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="library.xsd">
+    <book ISBN="978-3-16-148410-0" author="Leo Tolstoy" publisher="Penguin" language="English" available="yes">
+        <title>War and Peace</title>
+        <author>Leo Tolstoy</author>
+        <genre>Historical</genre>
+        <year>1869</year>
+    </book>
+    <book ISBN="978-5-17-085410-0" author="Alexander Pushkin" publisher="AST" language="Russian">
+        <title>The Captain's Daughter</title>
+        <author>Alexander Pushkin</author>
+        <genre>Novel</genre>
+        <year>1836</year>
+    </book>
+    <book ISBN="978-5-11-022410-0" available="yes" language="French">
+        <title>The Three Musketeers</title>
+        <author>Alexandre Dumas</author>
+        <genre>Historical novel</genre>
+        <year>1844</year>
+    </book>
+</library>
