@@ -1,0 +1,53 @@
+CREATE TABLE Genre (
+    	GenreID INTEGER PRIMARY KEY,
+	GenreName varchar(30) NOT NULL
+);
+
+CREATE TABLE Employee (
+		EmployeeID int PRIMARY KEY,
+	GenreID INTEGER,
+	FIO varchar(50) NOT NULL,
+
+		FOREIGN KEY (GenreID) REFERENCES Genre (GenreID)
+);
+
+CREATE TABLE Book (
+    	BookID INTEGER PRIMARY KEY,
+	GenreID INTEGER,
+	Title varchar(200) NOT NULL,
+	Author varchar(200) NOT NULL,
+		FOREIGN KEY (GenreID) REFERENCES Genre (GenreID)
+);
+
+INSERT INTO Genre VALUES
+(1, 'Классика'),
+(2, 'Научная фантастика'),
+(3, 'Поэзия')
+
+INSERT INTO Employee VALUES
+(1, 3, 'Иванов Иван Иванович'),
+(2, 2, 'Скалкин Евгений Юрьевич'),
+(3, 1, 'Шамшева Юлия Вадимовна')
+
+INSERT INTO Book VALUES
+(1, 1, 'Преступление и наказание', 'Ф.М.Достоевский'),
+(2, 1, 'Мёртвые души', 'Н.В.Гоголь'),
+(3, 2, 'Улитка на склоне', 'Братья Стругацкие'),
+(4, 3, 'Любовь хулигана', 'С.А.Есенин')
+
+COPY (SELECT table_to_xml('Genre', true, false, '')) to 'E:/genre.xml';
+COPY (SELECT table_to_xml('Employee', true, false, '')) to 'E:/employee.xml';
+COPY (SELECT table_to_xml('Book', true, false, '')) to 'E:/book.xml';
+
+
+
+/* Индексы (6 lab) */
+
+CREATE INDEX index_g
+ON Genre (GenreID)
+
+CREATE INDEX index_e
+ON Employee (EmployeeID)
+
+CREATE INDEX index_b
+ON Book (BookID)

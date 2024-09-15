@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ulgtu.xslt"?>
+<ulgtu>
+	<student>
+     <name>Максим</name>
+     <surname>Кашин</surname>
+     <course>3</course>
+	</student>
+	<student>
+     <name>Света</name>
+     <surname>Кудряшова</surname>
+     <course>2</course>
+	</student>
+	<student>
+     <name>Аня</name>
+     <surname>Жимолостнова</surname>
+     <course>3</course>
+	</student>
+	<student>
+     <name>Максим</name>
+     <surname>Сыров</surname>
+     <course>1</course>
+	</student>
+	<student>
+     <name>Анлрей</name>
+     <surname>Базунов</surname>
+     <course>3</course>
+	</student>
+	<student>
+     <name>Ксюша</name>
+     <surname>Клюшенкова</surname>
+     <course>3</course>
+	</student>
+	<student>
+     <name>Ирина</name>
+     <surname>Цуканова</surname>
+     <course>3</course>
+	</student>
+</ulgtu>

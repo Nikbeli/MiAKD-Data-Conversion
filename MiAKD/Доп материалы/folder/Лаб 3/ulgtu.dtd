@@ -1,0 +1,7 @@
+<!ELEMENT ulgtu (student, teacher)>
+        <!ELEMENT coffee (name,value,price)>
+                <!ELEMENT name (#PCDATA)>
+                <!ELEMENT surname (#PCDATA)>
+                <!ELEMENT course (#PCDATA)>
+				<!ATTLIST academician type CDATA "check">
+        <!ELEMENT teacher (name,surname)>

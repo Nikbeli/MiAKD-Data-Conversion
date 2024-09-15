@@ -1,0 +1,20 @@
+<?xml-stylesheet type="text/xml" href="library.xsl" version="2.0"?>
+
+<genre xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+<row>
+  <genreid>1</genreid>
+  <genrename>Классика</genrename>
+</row>
+
+<row>
+  <genreid>2</genreid>
+  <genrename>Научная фантастика</genrename>
+</row>
+
+<row>
+  <genreid>3</genreid>
+  <genrename>Поэзия</genrename>
+</row>
+
+</genre>
