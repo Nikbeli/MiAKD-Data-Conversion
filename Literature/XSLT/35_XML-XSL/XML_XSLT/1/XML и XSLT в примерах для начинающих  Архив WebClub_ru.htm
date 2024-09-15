@@ -1,0 +1,1573 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0050)http://www.webclub.ru/archive/xml/article-724.html -->
+<HTML><HEAD><TITLE>XML и XSLT в примерах для начинающих | Архив WebClub.ru</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=windows-1251"><LINK 
+href="XML и XSLT в примерах для начинающих  Архив WebClub_ru_files/frontend.css" 
+type=text/css rel=StyleSheet>
+<STYLE>H1 {
+	FONT: bold 180% arial,sans-serif; COLOR: #f0f0f0
+}
+H2 {
+	FONT-WEIGHT: bold; FONT-SIZE: 150%; LINE-HEIGHT: normal; FONT-STYLE: normal; FONT-VARIANT: normal
+}
+UL {
+	MARGIN-LEFT: 20px
+}
+.header {
+	BACKGROUND-COLOR: #006699
+}
+.footer {
+	BACKGROUND-COLOR: #f0f5ff
+}
+.also {
+	FONT-WEIGHT: normal; FONT-SIZE: 80%; BACKGROUND: #f0f0f0; LINE-HEIGHT: normal; FONT-STYLE: normal; FONT-VARIANT: normal
+}
+.news {
+	FONT-WEIGHT: normal; FONT-SIZE: 80%; BACKGROUND: #ffffff; LINE-HEIGHT: normal; FONT-STYLE: normal; FONT-VARIANT: normal
+}
+.softbg {
+	BACKGROUND: #f0f0f0
+}
+.clear {
+	BACKGROUND: #ffffff
+}
+.current {
+	COLOR: #006699
+}
+BLOCKQUOTE {
+	FONT-WEIGHT: normal; FONT-SIZE: 90%; MARGIN-LEFT: 4em; COLOR: #303030; LINE-HEIGHT: normal; MARGIN-RIGHT: 0em; FONT-STYLE: normal; FONT-VARIANT: normal
+}
+A.author {
+	MARGIN-LEFT: 3em; MARGIN-RIGHT: 1em; TEXT-ALIGN: right
+}
+.author {
+	MARGIN-LEFT: 3em; MARGIN-RIGHT: 1em; TEXT-ALIGN: right
+}
+</STYLE>
+
+<META content="MSHTML 5.50.4134.100" name=GENERATOR></HEAD>
+<BODY bgColor=#ffffff topMargin=0 marginheight="0">
+<TABLE cellSpacing=0 cellPadding=5 width="100%" border=0>
+  <TBODY>
+  <TR>
+    <TD class=header colSpan=2><A class=header 
+      href="http://www.webclub.ru/">WebClub&nbsp;-&nbsp;Всероссийский&nbsp;Клуб&nbsp;Веб-разработчиков</A><BR>&nbsp;</TD></TR></TBODY></TABLE><IMG 
+height=0 src="" width=0 border=0> 
+<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+  <TBODY>
+  <TR>
+    <TD>
+      <TABLE cellSpacing=0 cellPadding=0 border=0>
+        <TBODY>
+        <TR>
+          <TD>
+            <TABLE height=10 cellSpacing=0 cellPadding=0 width=1 border=0>
+              <TBODY>
+              <TR>
+                <TD></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE>
+<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+  <TBODY>
+  <TR>
+    <TD class=softbg>
+      <TABLE cellSpacing=1 cellPadding=4 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TD class=softbg width="50%"><STRONG><A 
+            href="http://www.webclub.ru/archive/">Архив сайта WebClub.ru</A> 
+            &nbsp;/&nbsp; <A href="http://www.webclub.ru/archive/markup/">Языки 
+            разметки </A>&nbsp;/&nbsp; <A 
+            href="http://www.webclub.ru/archive/xml/">XML </A></STRONG></TD><!--td class="softbg" width="25%"><strong>Новости</strong></td-->
+          <TD class=softbg width="25%"><STRONG>Ссылки по теме</STRONG></TD></TR>
+        <TR>
+          <TD class=clear vAlign=top>
+            <BLOCKQUOTE>Здесь находится часть материалов старого сайта. Мы не 
+              планируем переносить в Архив все статьи: размещаются те материалы, 
+              сохранить которые нам показалось важным.</BLOCKQUOTE><!-- content -->
+            <H1 class=kw>XML, eXtesible Markup Language, руководство, учебник, 
+            разметка, XSL, базы данных, XML-парсер, парсер</H1>
+            <P class=kw><B>XML</B>, <B>eXtesible Markup Language</B>, 
+            <B>руководство</B>, <B>учебник</B>, <B>разметка</B>, <B>XSL</B>, 
+            <B>базы данных</B>, <B>XML-парсер</B>, <B>парсер</B></P>
+            <H2>XML и XSLT в примерах для начинающих</H2>
+            <P class=author align=right><A 
+            onmouseover="this.href='mail'+'to:'+'igorvleonov'+'@'+'esc'+'.ru'" 
+            href="http://www.webclub.ru/archive/xml/article-724.html#">Леонов 
+            Игорь Васильевич</A></P><A name=Top></A>
+            <P><A 
+            href="http://www.webclub.ru/archive/xml/article-724.html#PrepareToRead">Предварительная 
+            подготовка</A><BR><A 
+            href="http://www.webclub.ru/archive/xml/article-724.html#Introduction">Введение</A><BR><A 
+            href="http://www.webclub.ru/archive/xml/article-724.html#FirstStep">Первые 
+            шаги</A><BR><A 
+            href="http://www.webclub.ru/archive/xml/article-724.html#ResultSet">Вывод 
+            результатов запроса</A><BR>&nbsp; &nbsp; &nbsp; <A 
+            href="http://www.webclub.ru/archive/xml/article-724.html#ResultSet-Simple">Простая 
+            таблица</A><BR>&nbsp; &nbsp; &nbsp; <A 
+            href="http://www.webclub.ru/archive/xml/article-724.html#ResultSet-OrderBy">Сортировка</A><BR>&nbsp; 
+            &nbsp; &nbsp; <A 
+            href="http://www.webclub.ru/archive/xml/article-724.html#ResultSet-Filter">Элемент 
+            XSL:IF - фильтр</A><BR>&nbsp; &nbsp; &nbsp; <A 
+            href="http://www.webclub.ru/archive/xml/article-724.html#ResultSet-DynamicDesign">Элемент 
+            XSL:IF - улучшение внешнего вида таблиц</A><BR><A 
+            href="http://www.webclub.ru/archive/xml/article-724.html#DynamicAttribute">Динамическое 
+            формирование атрибутов на примере параметров ссылки в теге 
+            &lt;a&gt;</A><BR><A 
+            href="http://www.webclub.ru/archive/xml/article-724.html#JavaScript">JavaScript 
+            и XML</A><BR><A 
+            href="http://www.webclub.ru/archive/xml/article-724.html#Remarks">Заключительные 
+            замечания</A><BR></P>
+            <P>
+            <H3><A name=PrepareToRead>Предварительная подготовка </A></H3>
+            <P>Для того, чтобы работать с данным документом, вам необходимо 
+            располагать как минимум браузером Internet Explorer версии 5.0 и 
+            выше. При этом будут работать некоторые из приведенных в тексте 
+            примеров.</P>
+            <P>Для того, чтобы у вас работали все примеры, необходимо установить 
+            XML-парсер версии 3. Если пример работает только под управлением 
+            XML-парсера версии 3, то в каждом случае это оговаривается особо. 
+            Отметим, что версии IE вплоть до 5.5 используют более ранние версии 
+            парсера, поэтому устанавливать его все равно придется. О более 
+            старших версиях IE узнайте самостоятельно.<BR>Дистрибутив&nbsp; 
+            XML-парсера версии 3 можно найти по адресу <A 
+            href="http://download.microsoft.com/download/xml/Install/3.0/WIN98Me/EN-US/msxml3.exe">http://download.microsoft.com/download/xml/Install/3.0/WIN98Me/EN-US/msxml3.exe</A>.<BR>После 
+            установки парсера вам нужно будет зарегистрировать его в реестре. 
+            Для этого в командной строке необходимо выполнить команду: <FONT 
+            class=normalb>regsvr32 msxml3.dll</FONT>. Затем необходимо сообщить 
+            IE, что вы намерены использовать этот парсер. Для этого нужно 
+            запустить утилиту <FONT class=normalb>xmlinst</FONT>. Утилиту <FONT 
+            class=normalb>xmlinst</FONT> можно найти по адресу <A 
+            href="http://msdn.microsoft.com/msdn-files/027/001/469/xmlinst.exe">http://msdn.microsoft.com/msdn-files/027/001/469/xmlinst.exe</A>. 
+            Вы можете также попробовать найти ответы на вопросы об установке 
+            XML-парсера по адресу <A 
+            href="http://www.netcrucible.com/xslt/msxml-faq.htm">http://www.netcrucible.com/xslt/msxml-faq.htm</A>.</FONT></P>
+            <P><FONT class=normal>А теперь перейдем к основной части нашего 
+            документа.</FONT></P>
+            <P>
+            <H3><A name=Introduction>Введение</A></H3>Рассмотрим простой пример 
+            XML-файла (<A target=_blank 
+            href="http://www.webclub.ru/archive/xml/724/ex01.xml">ex01.xml</A>).
+            <P></P>
+            <P><FONT class=normal color=#0000ff>&lt;?xml version="1.0" 
+            encoding="WINDOWS-1251"?&gt;</FONT><BR><FONT 
+            color=#0000ff>&lt;</FONT><FONT color=#800000>tutorial</FONT><FONT 
+            color=#0000ff>&gt;</FONT></FONT><BR><FONT class=normal><FONT 
+            color=#0000ff>&lt;</FONT><FONT color=#800000>title</FONT><FONT 
+            color=#0000ff>&gt;</FONT>"Заметки об XSL"<FONT 
+            color=#0000ff>&lt;/</FONT><FONT color=#800000>title</FONT><FONT 
+            color=#0000ff>&gt;</FONT></FONT><BR><FONT class=normal><FONT 
+            color=#0000ff>&lt;</FONT><FONT color=#800000>author</FONT><FONT 
+            color=#0000ff>&gt;</FONT>Леонов Игорь Васильевич<FONT 
+            color=#0000ff>&lt;/</FONT><FONT color=#800000>author</FONT><FONT 
+            color=#0000ff>&gt;</FONT></FONT><BR><FONT class=normal><FONT 
+            color=#0000ff>&lt;/</FONT><FONT color=#800000>tutorial</FONT><FONT 
+            color=#0000ff>&gt;</FONT></FONT></P>
+            <P><FONT class=normal>Если мы откроем этот файл в браузере Internet 
+            Explorer, то мы увидим тот же самый текст, который приведен выше, 
+            вместе со всеми тегами и служебной информацией. Но нам не нужны теги 
+            и служебная информация! Мы хотим видеть только ту информацию, 
+            которая относится к делу, а при помощи тегов - управлять внешним 
+            видом этой информации. Эта задача решается легко и просто: 
+            необходимо к XML-файлу добавить шаблон преобразования - 
+            XSL-файл.</FONT></P>
+            <P><FONT class=normal>Перепишем наш XML-файл в следующем виде (<A 
+            target=_blank 
+            href="http://www.webclub.ru/archive/xml/724/ex01-1.xml">ex01-1.xml</A>).</FONT></P>
+            <P><FONT class=normal color=#0000ff>&lt;?xml version="1.0" 
+            encoding="WINDOWS-1251"?&gt;</FONT><BR><FONT class=normal 
+            color=#0000ff>&lt;?xml-stylesheet type='text/xsl' 
+            href='ex01-1.xsl'?&gt;</FONT><BR><FONT class=normal><FONT 
+            color=#0000ff>&lt;</FONT><FONT color=#800000>tutorial</FONT><FONT 
+            color=#0000ff>&gt;</FONT></FONT><BR><FONT class=normal><FONT 
+            color=#0000ff>&lt;</FONT><FONT color=#800000>title</FONT><FONT 
+            color=#0000ff>&gt;</FONT>"Заметки об XSL"<FONT 
+            color=#0000ff>&lt;/</FONT><FONT color=#800000>title</FONT><FONT 
+            color=#0000ff>&gt;</FONT></FONT><BR><FONT class=normal><FONT 
+            color=#0000ff>&lt;</FONT><FONT color=#800000>author</FONT><FONT 
+            color=#0000ff>&gt;</FONT>Леонов Игорь Васильевич<FONT 
+            color=#0000ff>&lt;/</FONT><FONT color=#800000>author</FONT><FONT 
+            color=#0000ff>&gt;</FONT></FONT><BR><FONT class=normal><FONT 
+            color=#0000ff>&lt;/</FONT><FONT color=#800000>tutorial</FONT><FONT 
+            color=#0000ff>&gt;</FONT></FONT></P>
+            <P><FONT class=normal>И создадим XSL-файл <A target=_blank 
+            href="http://www.webclub.ru/archive/xml/724/ex01-1.xsl">ex01-1.xsl</A>. 
+            Текст файла приведен ниже.</FONT></P>
+            <P><FONT class=normal color=#0000ff>&lt;</FONT><FONT class=normal 
+            color=#800080>xsl:stylesheet version</FONT><FONT class=normal 
+            color=#0000ff>="</FONT><FONT class=normal>1.0</FONT><FONT 
+            class=normal color=#0000ff>"</FONT><FONT class=normal> <FONT 
+            color=#ff0000>xmlns:xsl</FONT></FONT><FONT class=normal 
+            color=#0000ff>="</FONT><STRONG><FONT class=normal 
+            color=#ff0000>http://www.w3.org/TR/WD-xsl</FONT></STRONG><FONT 
+            class=normal color=#0000ff>"&gt;</FONT><FONT 
+            class=normal><BR></FONT><FONT class=normal 
+            color=#0000ff>&lt;</FONT><FONT class=normal 
+            color=#800080>xsl:template match</FONT><FONT class=normal 
+            color=#0000ff>="</FONT><FONT class=normal>/</FONT><FONT class=normal 
+            color=#0000ff>"&gt;</FONT><FONT class=normal><BR></FONT><FONT 
+            class=normal color=#0000ff>&lt;</FONT><FONT class=normal 
+            color=#800000>p</FONT><FONT class=normal 
+            color=#0000ff>&gt;&lt;</FONT><FONT class=normal 
+            color=#800000>strong</FONT><FONT class=normal 
+            color=#0000ff>&gt;&lt;</FONT><FONT class=normal 
+            color=#800080>xsl:value-of select</FONT><FONT class=normal 
+            color=#0000ff>="</FONT><FONT class=normal>//title"<FONT 
+            color=#0000ff>"/&gt;</FONT></FONT><FONT class=normal 
+            color=#0000ff>&lt;/</FONT><FONT class=normal 
+            color=#800000>strong</FONT><FONT class=normal 
+            color=#0000ff>&gt;&lt;/</FONT><FONT class=normal 
+            color=#800000>p</FONT><FONT class=normal 
+            color=#0000ff>&gt;</FONT><FONT class=normal><BR></FONT><FONT 
+            class=normal color=#0000ff>&lt;</FONT><FONT class=normal 
+            color=#800000>p</FONT><FONT class=normal 
+            color=#0000ff>&gt;&lt;</FONT><FONT class=normal><FONT 
+            color=#800080>xsl:value-of select</FONT><FONT 
+            color=#0000ff>="</FONT>//author<FONT 
+            color=#0000ff>"/&gt;</FONT></FONT><FONT class=normal 
+            color=#0000ff>&lt;/</FONT><FONT class=normal 
+            color=#800000>p</FONT><FONT class=normal 
+            color=#0000ff>&gt;</FONT><FONT class=normal><BR></FONT><FONT 
+            class=normal color=#0000ff>&lt;/</FONT><FONT class=normal 
+            color=#800080>xsl:template</FONT><FONT class=normal 
+            color=#0000ff>&gt;</FONT><FONT class=normal><BR></FONT><FONT 
+            class=normal color=#0000ff>&lt;/</FONT><FONT class=normal 
+            color=#800080>xsl:stylesheet</FONT><FONT class=normal 
+            color=#0000ff>&gt;</FONT></P>
+            <P><FONT class=normal>Если мы теперь откроем файл ex01-1.xsl в 
+            браузере Internet Explorer, то мы увидим, что наша задача решена, - 
+            на экране осталась только необходимая нам информация, все теги 
+            исчезли. Результат, который вы получите на экране браузера, приведен 
+            ниже.</FONT></P>
+            <P>&nbsp;</P>
+            <P><STRONG>"Заметки об XSL"</STRONG></P>
+            <P>Леонов Игорь Васильевич</P>
+            <P>&nbsp;</P>
+            <P><FONT class=normal>Легко также увидеть, что порядок вывода строк 
+            у нас определяется только содержанием шаблона преобразования - 
+            XSL-файла. При необходимости шаблон можно легко поменять, абсолютно 
+            не меняя наш основной XML-файл.</FONT></P>
+            <P><FONT class=normal>Перепишем XML-файл. Информационную часть 
+            изменять не будем, а шаблон укажем другой <A target=_blank 
+            href="http://www.webclub.ru/archive/xml/724/ex01-2.xml">ex01-2.xml</A>.</FONT></P>
+            <P><FONT class=normal color=#0000ff>&lt;?xml version="1.0" 
+            encoding="WINDOWS-1251"?&gt;</FONT><BR><FONT class=normal 
+            color=#0000ff>&lt;?xml-stylesheet type='text/xsl' 
+            href='ex01-2.xsl'?&gt;</FONT><BR><FONT class=normal><FONT 
+            color=#0000ff>&lt;</FONT><FONT color=#800000>tutorial</FONT><FONT 
+            color=#0000ff>&gt;</FONT></FONT><BR><FONT class=normal><FONT 
+            color=#0000ff>&lt;</FONT><FONT color=#800000>title</FONT><FONT 
+            color=#0000ff>&gt;</FONT>"Заметки об XSL"<FONT 
+            color=#0000ff>&lt;/</FONT><FONT color=#800000>title</FONT><FONT 
+            color=#0000ff>&gt;</FONT></FONT><BR><FONT class=normal><FONT 
+            color=#0000ff>&lt;</FONT><FONT color=#800000>author</FONT><FONT 
+            color=#0000ff>&gt;</FONT>Леонов Игорь Васильевич<FONT 
+            color=#0000ff>&lt;/</FONT><FONT color=#800000>author</FONT><FONT 
+            color=#0000ff>&gt;</FONT></FONT><BR><FONT class=normal><FONT 
+            color=#0000ff>&lt;/</FONT><FONT color=#800000>tutorial</FONT><FONT 
+            color=#0000ff>&gt;</FONT></FONT></P>
+            <P><FONT class=normal>Создадим XSL-файл <A target=_blank 
+            href="http://www.webclub.ru/archive/xml/724/ex01-2.xsl">ex01-2.xsl</A>. 
+            Текст файла приведен ниже.</FONT></P>
+            <P><FONT class=normal color=#0000ff>&lt;</FONT><FONT class=normal 
+            color=#800080>xsl:stylesheet version</FONT><FONT class=normal 
+            color=#0000ff>="</FONT><FONT class=normal>1.0</FONT><FONT 
+            class=normal color=#0000ff>"</FONT><FONT class=normal> <FONT 
+            color=#ff0000>xmlns:xsl</FONT></FONT><FONT class=normal 
+            color=#0000ff>="</FONT><STRONG><FONT class=normal 
+            color=#ff0000>http://www.w3.org/TR/WD-xsl</FONT></STRONG><FONT 
+            class=normal color=#0000ff>"&gt;</FONT><FONT 
+            class=normal><BR></FONT><FONT class=normal 
+            color=#0000ff>&lt;</FONT><FONT class=normal 
+            color=#800080>xsl:template match</FONT><FONT class=normal 
+            color=#0000ff>="</FONT><FONT class=normal>/</FONT><FONT class=normal 
+            color=#0000ff>"&gt;</FONT><FONT class=normal><BR></FONT><FONT 
+            class=normal color=#0000ff>&lt;</FONT><FONT class=normal 
+            color=#800000>p</FONT><FONT class=normal 
+            color=#0000ff>&gt;&lt;</FONT><FONT class=normal 
+            color=#800000>strong</FONT><FONT class=normal 
+            color=#0000ff>&gt;&lt;</FONT><FONT class=normal 
+            color=#800080>xsl:value-of select</FONT><FONT class=normal 
+            color=#0000ff>="</FONT><FONT class=normal>//author<FONT 
+            color=#0000ff>"/&gt;</FONT></FONT><FONT class=normal 
+            color=#0000ff>&lt;/</FONT><FONT class=normal 
+            color=#800000>strong</FONT><FONT class=normal 
+            color=#0000ff>&gt;&lt;/</FONT><FONT class=normal 
+            color=#800000>p</FONT><FONT class=normal 
+            color=#0000ff>&gt;</FONT><FONT class=normal><BR></FONT><FONT 
+            class=normal color=#0000ff>&lt;</FONT><FONT class=normal 
+            color=#800000>p</FONT><FONT class=normal 
+            color=#0000ff>&gt;&lt;</FONT><FONT class=normal><FONT 
+            color=#800080>xsl:value-of select</FONT><FONT 
+            color=#0000ff>="</FONT>//title<FONT 
+            color=#0000ff>"/&gt;</FONT></FONT><FONT class=normal 
+            color=#0000ff>&lt;/</FONT><FONT class=normal 
+            color=#800000>p</FONT><FONT class=normal 
+            color=#0000ff>&gt;</FONT><FONT class=normal><BR></FONT><FONT 
+            class=normal color=#0000ff>&lt;/</FONT><FONT class=normal 
+            color=#800080>xsl:template</FONT><FONT class=normal 
+            color=#0000ff>&gt;</FONT><FONT class=normal><BR></FONT><FONT 
+            class=normal color=#0000ff>&lt;/</FONT><FONT class=normal 
+            color=#800080>xsl:stylesheet</FONT><FONT class=normal 
+            color=#0000ff>&gt;</FONT></P>
+            <P><FONT class=normal>Если мы теперь откроем файл ex01-2.xsl в 
+            браузере Internet Explorer, то результат будет другим.</FONT></P>
+            <P>&nbsp;</P>
+            <P>Леонов Игорь Васильевич</P>
+            <P><STRONG>"Заметки об XSL"</STRONG></P>
+            <P>&nbsp;</P>
+            <P><FONT class=normal>Отметим теперь момент, который является 
+            ключевым для разработчиков баз данных. Информация в XML-странице 
+            появляется, как правило, в результате запроса к базе данных. Запрос 
+            к базе данных в многопользовательской среде - это весьма 
+            дорогостоящая операция. Предположим теперь, что у нас нет XML и мы 
+            формируем стандартные статические HTML-страницы. В этом случае для 
+            решения задачи простого преобразования внешнего представления 
+            информации, например, для изменения сортировки, у нас есть два 
+            способа решения проблемы: выполнить запрос и сохранить результаты в 
+            каком-либо временном буфере на сервере или каждый раз при изменении 
+            внешнего представления выполнять новый запрос и формировать 
+            HTML-страницу заново.</FONT></P>
+            <P><FONT class=normal>Первый способ требует трудоемкого 
+            программирования, второй способ значительно увеличивает нагрузку на 
+            сервер базы данных, производительность которого часто является узким 
+            местом системы, - пользователю всегда хочется получать результаты 
+            быстрее.</FONT></P>
+            <P><FONT class=normal>XML и XSL - это исчерпывающее решение 
+            описанной выше проблемы. Фактически XML-страница - это и есть 
+            временный буфер для результатов запросов. Только вместо 
+            нестандартного и трудоемкого программирования мы теперь используем 
+            стандартный механизм XSL.</FONT></P>
+            <P><FONT class=normal>Есть и еще одно соображение, которое может 
+            быть существенным для разработчиков баз данных. Большинство 
+            современных СУБД могут форматировать результаты запроса к базе 
+            данных в виде XML-файла. То есть при построении интерфейса 
+            пользователя в рамках технологии XML и XSL мы добиваемся 
+            определенной независимости от поставщика СУБД. В части организации 
+            вывода - практически полной независимости. А эта часть весьма велика 
+            в большинстве прикладных систем, ориентированных на работу с базами 
+            данных. Конечно, помимо вывода есть еще ввод и серверная обработка 
+            бизнес-логики, но здесь вам придется искать какие-то иные 
+            решения.</FONT></P>
+            <P>
+            <H3><A name=FirstStep>Первые шаги</A></H3><FONT 
+            class=normal>Разберем теперь более подробно первый пример. Напомним 
+            его текст.</FONT>
+            <P></P>
+            <P><FONT class=normal color=#0000ff>&lt;?xml version="1.0" 
+            encoding="WINDOWS-1251"?&gt;</FONT><BR><FONT class=normal><FONT 
+            color=#0000ff>&lt;</FONT><FONT color=#800000>tutorial</FONT><FONT 
+            color=#0000ff>&gt;</FONT></FONT><BR><FONT class=normal><FONT 
+            color=#0000ff>&lt;</FONT><FONT color=#800000>title</FONT><FONT 
+            color=#0000ff>&gt;</FONT>"Заметки об XSL"<FONT 
+            color=#0000ff>&lt;/</FONT><FONT color=#800000>title</FONT><FONT 
+            color=#0000ff>&gt;</FONT></FONT><BR><FONT class=normal><FONT 
+            color=#0000ff>&lt;</FONT><FONT color=#800000>author</FONT><FONT 
+            color=#0000ff>&gt;</FONT>Леонов Игорь Васильевич<FONT 
+            color=#0000ff>&lt;/</FONT><FONT color=#800000>author</FONT><FONT 
+            color=#0000ff>&gt;</FONT></FONT><BR><FONT class=normal><FONT 
+            color=#0000ff>&lt;/</FONT><FONT color=#800000>tutorial</FONT><FONT 
+            color=#0000ff>&gt;</FONT></FONT></P>
+            <P><FONT class=normal>Первая строка информирует браузер о том, что 
+            файл имеет формат XML. Атрибут </FONT><FONT class=normal 
+            color=#0000ff>version</FONT><FONT class=normal> является 
+            обязательным. Атрибут </FONT><FONT class=normal 
+            color=#0000ff>encoding</FONT><FONT class=normal> не является 
+            обязательным, но если у вас в тексте есть русские буквы, то 
+            необходимо вставить этот атрибут, в противном случае XML-файл просто 
+            не будет обрабатываться, - вы получите сообщение об 
+            ошибке.</FONT></P>
+            <P><FONT class=normal>Следующие строки - это тело XML-файла. Оно 
+            состоит из элементов, которые в совокупности образуют древовидную 
+            структуру. Элементы идентифицируются тегами и могут быть вложены 
+            друг в друга.</FONT></P>
+            <P><FONT class=normal>Элементы могут иметь атрибуты, значения 
+            которых тоже могут обрабатываться в соответствии с 
+            шаблоном.</FONT></P>
+            <P><FONT class=normal>На верхнем уровне XML-файла всегда находится 
+            один элемент. То есть файл вида</FONT></P>
+            <P><FONT class=normal color=#0000ff>&lt;?xml version="1.0" 
+            encoding="WINDOWS-1251"?&gt;</FONT><BR><FONT class=normal><FONT 
+            color=#0000ff>&lt;</FONT><FONT color=#800000>tutorial</FONT><FONT 
+            color=#0000ff>&gt;</FONT></FONT><BR><FONT class=normal><FONT 
+            color=#0000ff>&lt;</FONT><FONT color=#800000>title</FONT><FONT 
+            color=#0000ff>&gt;</FONT>"Заметки об XSL"<FONT 
+            color=#0000ff>&lt;/</FONT><FONT color=#800000>title</FONT><FONT 
+            color=#0000ff>&gt;</FONT></FONT><BR><FONT class=normal><FONT 
+            color=#0000ff>&lt;</FONT><FONT color=#800000>author</FONT><FONT 
+            color=#0000ff>&gt;</FONT>Леонов Игорь Васильевич<FONT 
+            color=#0000ff>&lt;/</FONT><FONT color=#800000>author</FONT><FONT 
+            color=#0000ff>&gt;</FONT></FONT><BR><FONT class=normal><FONT 
+            color=#0000ff>&lt;/</FONT><FONT color=#800000>tutorial</FONT><FONT 
+            color=#0000ff>&gt;<BR>&lt;</FONT><FONT 
+            color=#800000>tutorial</FONT><FONT 
+            color=#0000ff>&gt;</FONT></FONT><BR><FONT class=normal><FONT 
+            color=#0000ff>&lt;</FONT><FONT color=#800000>title</FONT><FONT 
+            color=#0000ff>&gt;</FONT>"Введение в CSP"<FONT 
+            color=#0000ff>&lt;/</FONT><FONT color=#800000>title</FONT><FONT 
+            color=#0000ff>&gt;</FONT></FONT><BR><FONT class=normal><FONT 
+            color=#0000ff>&lt;</FONT><FONT color=#800000>author</FONT><FONT 
+            color=#0000ff>&gt;</FONT>Леонов Игорь Васильевич<FONT 
+            color=#0000ff>&lt;/</FONT><FONT color=#800000>author</FONT><FONT 
+            color=#0000ff>&gt;</FONT></FONT><BR><FONT class=normal><FONT 
+            color=#0000ff>&lt;/</FONT><FONT color=#800000>tutorial</FONT><FONT 
+            color=#0000ff>&gt;</FONT></FONT></P>
+            <P><FONT class=normal>не будет обрабатываться браузером. Для 
+            преобразования в корректный XML-файл нужно добавить теги элемента 
+            верхнего уровня, например</FONT></P>
+            <P><FONT class=normal color=#0000ff>&lt;?xml version="1.0" 
+            encoding="WINDOWS-1251"?&gt;</FONT><BR><FONT class=normal 
+            color=#0000ff>&lt;</FONT><FONT class=normal 
+            color=#800000>knowledgeDatabase</FONT><FONT class=normal 
+            color=#0000ff>&gt;</FONT><BR><FONT class=normal><FONT 
+            color=#0000ff>&lt;</FONT><FONT color=#800000>tutorial</FONT><FONT 
+            color=#0000ff>&gt;</FONT></FONT><BR><FONT class=normal><FONT 
+            color=#0000ff>&lt;</FONT><FONT color=#800000>title</FONT><FONT 
+            color=#0000ff>&gt;</FONT>"Заметки об XSL"<FONT 
+            color=#0000ff>&lt;/</FONT><FONT color=#800000>title</FONT><FONT 
+            color=#0000ff>&gt;</FONT></FONT><BR><FONT class=normal><FONT 
+            color=#0000ff>&lt;</FONT><FONT color=#800000>author</FONT><FONT 
+            color=#0000ff>&gt;</FONT>Леонов Игорь Васильевич<FONT 
+            color=#0000ff>&lt;/</FONT><FONT color=#800000>author</FONT><FONT 
+            color=#0000ff>&gt;</FONT></FONT><BR><FONT class=normal><FONT 
+            color=#0000ff>&lt;/</FONT><FONT color=#800000>tutorial</FONT><FONT 
+            color=#0000ff>&gt;<BR>&lt;</FONT><FONT 
+            color=#800000>tutorial</FONT><FONT 
+            color=#0000ff>&gt;</FONT></FONT><BR><FONT class=normal><FONT 
+            color=#0000ff>&lt;</FONT><FONT color=#800000>title</FONT><FONT 
+            color=#0000ff>&gt;</FONT>"Введение в CSP"<FONT 
+            color=#0000ff>&lt;/</FONT><FONT color=#800000>title</FONT><FONT 
+            color=#0000ff>&gt;</FONT></FONT><BR><FONT class=normal><FONT 
+            color=#0000ff>&lt;</FONT><FONT color=#800000>author</FONT><FONT 
+            color=#0000ff>&gt;</FONT>Леонов Игорь Васильевич<FONT 
+            color=#0000ff>&lt;/</FONT><FONT color=#800000>author</FONT><FONT 
+            color=#0000ff>&gt;</FONT></FONT><BR><FONT class=normal><FONT 
+            color=#0000ff>&lt;/</FONT><FONT color=#800000>tutorial</FONT><FONT 
+            color=#0000ff>&gt;<BR></FONT></FONT><FONT class=normal 
+            color=#0000ff>&lt;</FONT><FONT class=normal 
+            color=#800000>/knowledgeDatabase</FONT><FONT class=normal 
+            color=#0000ff>&gt;</FONT></P>
+            <P><FONT class=normal>Отметим, что имена тегов чувствительны к 
+            регистру символов. Подробнее об этом можно прочесть в любой книге по 
+            XML - элементам и атрибутам в этих книгах уделяется достаточно 
+            большое внимание.</FONT></P>
+            <P><FONT class=normal>Перейдем теперь к шаблону преобразования - к 
+            XSL-файлу. Задача XSL-файла - преобразовать дерево XML-файла в 
+            другое дерево, которое, например, будет соответствовать формату HTML 
+            и может быть изображено на экране браузера с учетом форматирования, 
+            выбора шрифтов и т.п.</FONT></P>
+            <P><FONT class=normal>Для того, чтобы браузер выполнил необходимое 
+            преобразование, нужно в XML-файле указать ссылку на 
+            XSL-файл</FONT></P>
+            <P><FONT class=normal color=#0000ff>&lt;?xml version="1.0" 
+            encoding="WINDOWS-1251"?&gt;</FONT><BR><FONT class=normal 
+            color=#0000ff>&lt;?xml-stylesheet type='text/xsl' 
+            href='ex01-1.xsl'?&gt;</FONT></P>
+            <P><FONT class=normal>Рассмотрим теперь текст XSL-файла</FONT></P>
+            <P><FONT class=normal color=#0000ff>&lt;</FONT><FONT class=normal 
+            color=#800080>xsl:stylesheet version</FONT><FONT class=normal 
+            color=#0000ff>="</FONT><FONT class=normal>1.0</FONT><FONT 
+            class=normal color=#0000ff>"</FONT><FONT class=normal> <FONT 
+            color=#ff0000>xmlns:xsl</FONT></FONT><FONT class=normal 
+            color=#0000ff>="</FONT><STRONG><FONT class=normal 
+            color=#ff0000>http://www.w3.org/TR/WD-xsl</FONT></STRONG><FONT 
+            class=normal color=#0000ff>"&gt;</FONT><FONT 
+            class=normal><BR></FONT><FONT class=normal 
+            color=#0000ff>&lt;</FONT><FONT class=normal 
+            color=#800080>xsl:template match</FONT><FONT class=normal 
+            color=#0000ff>="</FONT><FONT class=normal>/</FONT><FONT class=normal 
+            color=#0000ff>"&gt;</FONT><FONT class=normal><BR></FONT><FONT 
+            class=normal color=#0000ff>&lt;</FONT><FONT class=normal 
+            color=#800000>p</FONT><FONT class=normal 
+            color=#0000ff>&gt;&lt;</FONT><FONT class=normal 
+            color=#800000>strong</FONT><FONT class=normal 
+            color=#0000ff>&gt;&lt;</FONT><FONT class=normal 
+            color=#800080>xsl:value-of select</FONT><FONT class=normal 
+            color=#0000ff>="</FONT><FONT class=normal>//title"<FONT 
+            color=#0000ff>"/&gt;</FONT></FONT><FONT class=normal 
+            color=#0000ff>&lt;/</FONT><FONT class=normal 
+            color=#800000>strong</FONT><FONT class=normal 
+            color=#0000ff>&gt;&lt;/</FONT><FONT class=normal 
+            color=#800000>p</FONT><FONT class=normal 
+            color=#0000ff>&gt;</FONT><FONT class=normal><BR></FONT><FONT 
+            class=normal color=#0000ff>&lt;</FONT><FONT class=normal 
+            color=#800000>p</FONT><FONT class=normal 
+            color=#0000ff>&gt;&lt;</FONT><FONT class=normal><FONT 
+            color=#800080>xsl:value-of select</FONT><FONT 
+            color=#0000ff>="</FONT>//author<FONT 
+            color=#0000ff>"/&gt;</FONT></FONT><FONT class=normal 
+            color=#0000ff>&lt;/</FONT><FONT class=normal 
+            color=#800000>p</FONT><FONT class=normal 
+            color=#0000ff>&gt;</FONT><FONT class=normal><BR></FONT><FONT 
+            class=normal color=#0000ff>&lt;/</FONT><FONT class=normal 
+            color=#800080>xsl:template</FONT><FONT class=normal 
+            color=#0000ff>&gt;</FONT><FONT class=normal><BR></FONT><FONT 
+            class=normal color=#0000ff>&lt;/</FONT><FONT class=normal 
+            color=#800080>xsl:stylesheet</FONT><FONT class=normal 
+            color=#0000ff>&gt;</FONT></P>
+            <P><FONT class=normal>Первая строка файла содержит тег элемента 
+            </FONT><FONT class=normal color=#800080>xsl:stylesheet</FONT><FONT 
+            class=normal>. Атрибуты элемента - номер версии и ссылка на 
+            пространство имен. Эти атрибуты элемента </FONT><FONT class=normal 
+            color=#800080>xsl:stylesheet</FONT><FONT class=normal> являются 
+            обязательными. В нашем случае пространство имен - это все имена 
+            элементов и их атрибутов, которые могут использоваться в XSL-файле. 
+            Для XSL-файлов ссылка на пространство имен является 
+            стандартной.</FONT></P>
+            <P><FONT class=normal>Заметим, что XSL-файл является одной из 
+            разновидностей XML-файлов. Он не содержит пользовательских данных, 
+            но формат его тот же самый. Файл содержит элемент верхнего уровня 
+            </FONT><FONT class=normal color=#800080>xsl:stylesheet</FONT><FONT 
+            class=normal>, а далее идет дерево правил преобразования.</FONT></P>
+            <P><FONT class=normal>В настоящем документе мы не будем подробно 
+            пояснять, что означает каждый элемент XSL-файла. Мы будем приводить 
+            различные примеры и показывать результат в каждом примере. Читатель 
+            сможет самостоятельно сопоставить различные элементы XSL-файла и 
+            инициируемые этими элементами преобразования исходного XML-файла с 
+            пользовательской информацией.</FONT></P>
+            <P><FONT class=normal>В дальнейшем тексты XML- и XSL-файлов мы будем 
+            приводить в черно-белом варианте. Вы всегда сможете открыть реальный 
+            файл и посмотреть все в цвете. При необходимости закомментируйте 
+            ссылку на XSL-файл. Синтаксис комментария следующий - <FONT 
+            color=#800080>&lt;!-- Текст комментария --&gt;</FONT>. В текст 
+            комментария нельзя вставлять символы <FONT 
+            color=#800080>--</FONT>.</FONT></P>
+            <P><FONT class=normal>В первом примере мы посмотрели, как с помощью 
+            элемента </FONT><FONT class=normal 
+            color=#800080>xsl:value-of</FONT><FONT class=normal> можно вывести в 
+            HTML-формате содержание элемента (текст, заключенный между тегами). 
+            Теперь мы посмотрим, как при помощи того же самого элемента можно 
+            вывести значение атрибута элемента.</FONT></P>
+            <P><FONT class=normal>Рассмотрим следующий XML-файл <A target=_blank 
+            href="http://www.webclub.ru/archive/xml/724/ex02-1.xml">ex02-1.xml</A></FONT></P>
+            <BLOCKQUOTE>&lt;?xml version="1.0" 
+              encoding="WINDOWS-1251"?&gt;<BR>&lt;?xml-stylesheet 
+              type='text/xsl' 
+              href='ex02-1.xsl'?&gt;<BR>&lt;tutorial&gt;<BR>&lt;dog 
+              caption="Собака: " name="Шарик"&gt;<BR>&lt;dogInfo weight="18 кг" 
+              color="рыжий с черными 
+              подпалинами"/&gt;<BR>&lt;/dog&gt;<BR>&lt;/tutorial&gt;</BLOCKQUOTE>
+            <P><FONT class=normal>В этом файле информация хранится не в 
+            содержании элементов, а в виде значений атрибутов. Файл <A 
+            target=_blank 
+            href="http://www.webclub.ru/archive/xml/724/ex02-1.xsl">ex02-1.xsl</A> 
+            имеет вид</FONT></P>
+            <BLOCKQUOTE>&lt;xsl:stylesheet version="1.0" 
+              xmlns:xsl="http://www.w3.org/TR/WD-xsl"&gt;<BR>&lt;xsl:template 
+              match="/"&gt;<BR>&lt;P&gt;&lt;B&gt;&lt;xsl:value-of 
+              select="//dog/@caption"/&gt;&lt;/B&gt;<BR>&lt;xsl:value-of 
+              select="//dog/@name"/&gt;.<BR>&lt;xsl:value-of 
+              select="//dogInfo/@weight"/&gt;, &lt;xsl:value-of 
+              select="//dogInfo/@color"/&gt;.&lt;/P&gt;<BR>&lt;/xsl:template&gt;<BR>&lt;/xsl:stylesheet&gt;</BLOCKQUOTE>
+            <P><FONT class=normal>Обратите внимание на синтаксис ссылки на 
+            атрибут элемента - <FONT 
+            color=#800080>//dog<STRONG>/@</STRONG>name</FONT>. Имя элемента и 
+            имя атрибута разделены парой символов "<FONT 
+            color=#800080>/@</FONT>". В остальном синтаксис тот же самый, что и 
+            для ссылки на содержание элемента.</FONT></P>
+            <P><FONT class=normal>Результат имеет следующий вид:</FONT></P>
+            <P><FONT size=+2><B>Собака:</B> Шарик. 18 кг, рыжий с черными 
+            подпалинами.</FONT></P>
+            <P><FONT class=normal>Обратим теперь внимание на следующий момент. В 
+            XSL-файле мы никак не использовали элемент<FONT color=#800080> 
+            tutorial</FONT>. На самом деле можно было использовать полный путь. 
+            Перепишем наш XML-файл, увеличив глубину дерева (<A target=_blank 
+            href="http://www.webclub.ru/archive/xml/724/ex02-2.xml">ex02-2.xml</A>)</FONT></P>
+            <BLOCKQUOTE>&lt;?xml version="1.0" 
+              encoding="WINDOWS-1251"?&gt;<BR>&lt;?xml-stylesheet 
+              type='text/xsl' 
+              href='ex02-2.xsl'?&gt;<BR>&lt;tutorial&gt;<BR>&lt;enimals&gt;<BR>&lt;dog 
+              caption="Собака: " name="Шарик"&gt;<BR>&lt;dogInfo weight="18 кг" 
+              color="рыжий с черными 
+              подпалинами"/&gt;<BR>&lt;/dog&gt;<BR>&lt;/enimals&gt;<BR>&lt;/tutorial&gt;</BLOCKQUOTE>
+            <P><FONT class=normal>Файл <A target=_blank 
+            href="http://www.webclub.ru/archive/xml/724/ex02-2.xsl">ex02-2.xsl</A> 
+            имеет вид</FONT></P>
+            <BLOCKQUOTE>&lt;xsl:stylesheet version="1.0" 
+              xmlns:xsl="http://www.w3.org/TR/WD-xsl"&gt;<BR>&lt;xsl:template 
+              match="/"&gt;<BR>&lt;P&gt;&lt;B&gt;&lt;xsl:value-of 
+              select="//enimals/dog/@caption"/&gt;&lt;/B&gt;<BR>&lt;xsl:value-of 
+              select="//enimals/dog/@name"/&gt;.<BR>&lt;xsl:value-of 
+              select="//enimals/dog/dogInfo/@weight"/&gt;, &lt;xsl:value-of 
+              select="//dogInfo/@color"/&gt;.&lt;/P&gt;<BR>&lt;/xsl:template&gt;<BR>&lt;/xsl:stylesheet&gt;</BLOCKQUOTE>
+            <P><FONT class=normal>Результат будет тем же самым.</FONT></P>
+            <P><FONT class=bigb>Собака:</FONT><FONT class=big> Шарик. 18 кг, 
+            рыжий с черными подпалинами.</FONT></P>
+            <P><FONT class=normal>В этом примере мы использовали полную ссылку 
+            для значений атрибутов. При выводе одиночных значений оба варианта - 
+            полная и сокращенная ссылка - работают одинаково.</FONT></P>
+            <P><FONT class=normal>На этом мы закончим разбор примеров с выводом 
+            одиночных значений и перейдем к выводу табличной информации - к 
+            выводу результатов запроса.</FONT></P>
+            <P>
+            <H3><A name=ResultSet>Вывод результатов запроса </A></H3><FONT 
+            class=normal>До тех пор, пока мы работаем с несколькими реквизитами 
+            одного и того же объекта, разницы между XML и HTML практически нет. 
+            Однако стоит нам перейти к информации, содержащей несколько строк, 
+            как выгоды XML становятся очевидны. Но прежде чем перейти к выгодам, 
+            научимся выводить на экран простую таблицу.</FONT>
+            <P></P>
+            <P><FONT class=normal>Рассмотрим следующий XML-файл - <A 
+            target=_blank 
+            href="http://www.webclub.ru/archive/xml/724/ex03.xml">ex03.xml</A>. 
+            Текст его приведен ниже.</FONT></P>
+            <BLOCKQUOTE>&lt;?xml version="1.0" 
+              encoding="WINDOWS-1251"?&gt;<BR>&lt;tutorial&gt;<BR>&lt;enimals&gt;<BR>&nbsp;&nbsp;&lt;dogs&gt;<BR>&nbsp;&nbsp;&lt;dogsCaption&gt;Собаки&lt;/dogsCaption&gt;<BR>&nbsp;&nbsp;&lt;dogsCaptionName&gt;Кличка&lt;/dogsCaptionName&gt;<BR>&nbsp;&nbsp;&lt;dogsCaptionWeight 
+              caption="кг"&gt;Вес&lt;/dogsCaptionWeight&gt;<BR>&nbsp;&nbsp;&lt;dogsCaptionColor&gt;Цвет&lt;/dogsCaptionColor&gt;<BR>&nbsp;&nbsp;&lt;dog&gt;<BR>&nbsp;&nbsp;&nbsp;&nbsp;&lt;dogName&gt;Шарик&lt;/dogName&gt;<BR>&nbsp;&nbsp;&nbsp;&nbsp;&lt;dogWeight 
+              caption="кг"&gt;18&lt;/dogWeight&gt;<BR>&nbsp;&nbsp;&nbsp;&nbsp;&lt;dogColor&gt;рыжий 
+              с черными 
+              подпалинами&lt;/dogColor&gt;<BR>&nbsp;&nbsp;&lt;/dog&gt;<BR>&nbsp;&nbsp;&lt;dog&gt;<BR>&nbsp;&nbsp;&nbsp;&nbsp;&lt;dogName&gt;Тузик&lt;/dogName&gt;<BR>&nbsp;&nbsp;&nbsp;&nbsp;&lt;dogWeight 
+              caption="кг"&gt;10&lt;/dogWeight&gt;<BR>&nbsp;&nbsp;&nbsp;&nbsp;&lt;dogColor&gt;белый 
+              с черными 
+              пятнами&lt;/dogColor&gt;<BR>&nbsp;&nbsp;&lt;/dog&gt;<BR>&nbsp;&nbsp;&lt;dog&gt;<BR>&nbsp;&nbsp;&nbsp;&nbsp;&lt;dogName&gt;Бобик&lt;/dogName&gt;<BR>&nbsp;&nbsp;&nbsp;&nbsp;&lt;dogWeight 
+              caption="кг"&gt;2&lt;/dogWeight&gt;<BR>&nbsp;&nbsp;&nbsp;&nbsp;&lt;dogColor&gt;бело-серый&lt;/dogColor&gt;<BR>&nbsp;&nbsp;&lt;/dog&gt;<BR>&nbsp;&nbsp;&lt;dog&gt;<BR>&nbsp;&nbsp;&nbsp;&nbsp;&lt;dogName&gt;Трезор&lt;/dogName&gt;<BR>&nbsp;&nbsp;&nbsp;&nbsp;&lt;dogWeight 
+              caption="кг"&gt;25&lt;/dogWeight&gt;<BR>&nbsp;&nbsp;&nbsp;&nbsp;&lt;dogColor&gt;черный&lt;/dogColor&gt;<BR>&nbsp;&nbsp;&lt;/dog&gt;<BR>&nbsp;&nbsp;&lt;/dogs&gt;<BR>&lt;/enimals&gt;<BR>&lt;/tutorial&gt;</BLOCKQUOTE>
+            <P><FONT class=normal>Предположим, что это результат запроса к базе 
+            данных и выведем на экран соответствующую таблицу.</FONT></P>
+            <P>
+            <H4><A name=ResultSet-Simple>Простая таблица </A></H4>
+            <P><FONT class=normal>Первый шаг - это, как всегда, добавление 
+            шаблона преобразования. Модифицируем наш файл, добавив в него ссылку 
+            на шаблон. В результате получим файл <A target=_blank 
+            href="http://www.webclub.ru/archive/xml/724/ex03-1.xml">ex03-1.xml</A>.</FONT></P>
+            <P><FONT class=normal>В этот файл добавлен шаблон преобразования <A 
+            target=_blank 
+            href="http://www.webclub.ru/archive/xml/724/ex03-1.xsl">ex03-1.xsl</A>.</FONT></P>
+            <P><FONT class=normal>Рассмотрим этот шаблон подробнее. Вот его 
+            текст.</FONT></P>
+            <BLOCKQUOTE>&lt;xsl:stylesheet version="1.0" 
+              xmlns:xsl="http://www.w3.org/TR/WD-xsl"&gt;<BR>&lt;xsl:template 
+              match="/"&gt;<BR>&lt;table border="1"&gt;<BR>&lt;tr 
+              bgcolor="#CCCCCC"&gt;<BR>&lt;td 
+              align="center"&gt;&lt;strong&gt;&lt;xsl:value-of 
+              select="//dogsCaptionName"/&gt;&lt;/strong&gt;&lt;/td&gt;<BR>&lt;td 
+              align="center"&gt;&lt;strong&gt;&lt;xsl:value-of 
+              select="//dogsCaptionWeight"/&gt;&lt;/strong&gt;&lt;/td&gt;<BR>&lt;td 
+              align="center"&gt;&lt;strong&gt;&lt;xsl:value-of 
+              select="//dogsCaptionColor"/&gt;&lt;/strong&gt;&lt;/td&gt;<BR>&lt;/tr&gt;<BR>&lt;xsl:for-each 
+              select="tutorial/enimals/dogs/dog"&gt;<BR>&lt;tr 
+              bgcolor="#F5F5F5"&gt;<BR>&lt;td&gt;&lt;xsl:value-of 
+              select="dogName"/&gt;&lt;/td&gt;<BR>&lt;td 
+              align="right"&gt;&lt;xsl:value-of select="dogWeight"/&gt; 
+              &lt;xsl:value-of 
+              select="dogWeight/@caption"/&gt;&lt;/td&gt;<BR>&lt;td&gt;&lt;xsl:value-of 
+              select="dogColor"/&gt;&lt;/td&gt;<BR>&lt;/tr&gt;<BR>&lt;/xsl:for-each&gt;<BR>&lt;/table&gt;<BR>&lt;/xsl:template&gt;<BR>&lt;/xsl:stylesheet&gt;</BLOCKQUOTE>
+            <P><FONT class=normal>Первые две строки шаблона являются уже 
+            привычными. Следующие шесть строк - это строка, содержащая заголовки 
+            столбцов таблицы. Конструкция для извлечения текста заголовков 
+            таблицы вам уже знакома. А вот девятая строка является 
+            новой:</FONT></P>
+            <BLOCKQUOTE>&lt;xsl:for-each 
+            select="tutorial/enimals/dogs/dog"&gt;</BLOCKQUOTE>
+            <P><FONT class=normal>Этот элемент шаблона позволяет выбрать и 
+            просмотреть все группы информации, полный путь к которым задается 
+            списком тегов <FONT 
+            color=#800080>"tutorial/enimals/dogs/dog"</FONT>. Обратите внимание 
+            - путь задается полностью, ни один из тегов опустить нельзя. Далее в 
+            ячейки таблицы помещается информация о наших собаках. В отличие от 
+            первых примеров путь к соответствующей информации тоже задается 
+            полностью. Попробуем, например, разместить информацию о кличке 
+            чуть-чуть иначе <A target=_blank 
+            href="http://www.webclub.ru/archive/xml/724/ex03-2.xml">ex03-2.xml</A>:</FONT></P>
+            <BLOCKQUOTE>&lt;dogName&gt;<BR>&lt;dogNick&gt;Шарик&lt;/dogNick&gt;<BR>&lt;/dogName&gt;</BLOCKQUOTE>
+            <P><FONT class=normal>Если мы в соответствующем XSL-файле поставим 
+            ссылку <FONT color=#800080>&lt;xsl:value-of 
+            select="dogNick"/&gt;</FONT>, то в соответствующем столбце никакой 
+            клички мы не увидим. Ссылка должна быть полной - <FONT 
+            color=#800080>&lt;xsl:value-of select="dogName/dogNick"/&gt;</FONT>. 
+            Вы можете самостоятельно поэкспериментировать с файлом <A 
+            target=_blank 
+            href="http://www.webclub.ru/archive/xml/724/ex03-2.xsl">ex03-2.xsl</A>. 
+            Правильный результат приведен ниже.</FONT></P>
+            <TABLE border=1>
+              <TBODY>
+              <TR bgColor=#cccccc>
+                <TD align=middle><STRONG>Кличка</STRONG></TD>
+                <TD align=middle><STRONG>Вес</STRONG></TD>
+                <TD align=middle><STRONG>Цвет</STRONG></TD></TR>
+              <TR bgColor=#f5f5f5>
+                <TD>Шарик</TD>
+                <TD align=right>18 кг</TD>
+                <TD>рыжий с черными подпалинами</TD></TR>
+              <TR bgColor=#f5f5f5>
+                <TD>Тузик</TD>
+                <TD align=right>10 кг</TD>
+                <TD>белый с черными пятнами</TD></TR>
+              <TR bgColor=#f5f5f5>
+                <TD>Бобик</TD>
+                <TD align=right>2 кг</TD>
+                <TD>бело-серый</TD></TR>
+              <TR bgColor=#f5f5f5>
+                <TD>Трезор</TD>
+                <TD align=right>25 кг</TD>
+                <TD>черный</TD></TR></TBODY></TABLE>
+            <P>
+            <H4><A name=ResultSet-OrderBy>Сортировка </A></H4>
+            <P><FONT class=normal>В предыдущих примерах порядок строк в таблице 
+            полностью соответствовал группам тегов в XML-файле. Этот порядок 
+            можно изменять. Добавим в тег</FONT></P>
+            <BLOCKQUOTE>&lt;xsl:for-each 
+            select="tutorial/enimals/dogs/dog"&gt;</BLOCKQUOTE>
+            <P><FONT class=normal>атрибут <FONT 
+            color=#800080>order-by</FONT></FONT></P>
+            <BLOCKQUOTE>&lt;xsl:for-each select="tutorial/enimals/dogs/dog" 
+              order-by="dogName"&gt;</BLOCKQUOTE>
+            <P><FONT class=normal>Наша таблица примет вид (<A target=_blank 
+            href="http://www.webclub.ru/archive/xml/724/ex03-3.xml">ex03-3.xml</A>, 
+            <A target=_blank 
+            href="http://www.webclub.ru/archive/xml/724/ex03-3.xsl">ex03-3.xsl</A>).</FONT></P>
+            <TABLE border=1>
+              <TBODY>
+              <TR bgColor=#cccccc>
+                <TD align=middle><STRONG>Кличка</STRONG></TD>
+                <TD align=middle><STRONG>Вес</STRONG></TD>
+                <TD align=middle><STRONG>Цвет</STRONG></TD></TR>
+              <TR bgColor=#f5f5f5>
+                <TD>Бобик</TD>
+                <TD align=right>2 кг</TD>
+                <TD>бело-серый</TD></TR>
+              <TR bgColor=#f5f5f5>
+                <TD>Трезор</TD>
+                <TD align=right>25 кг</TD>
+                <TD>черный</TD></TR>
+              <TR bgColor=#f5f5f5>
+                <TD>Тузик</TD>
+                <TD align=right>10 кг</TD>
+                <TD>белый с черными пятнами</TD></TR>
+              <TR bgColor=#f5f5f5>
+                <TD>Шарик</TD>
+                <TD align=right>18 кг</TD>
+                <TD>рыжий с черными подпалинами</TD></TR></TBODY></TABLE>
+            <P><FONT class=normal>Более интересные результаты мы получим, если 
+            попытаемся отсортировать таблицу по столбцу "Вес". Вначале попробуем 
+            сделать по аналогии с предыдущим примером - атрибут <FONT 
+            color=#800080>order-by="dogName"</FONT> заменим на <FONT 
+            color=#800080>order-by="dogWeight"</FONT>. Результат приведен 
+            ниже&nbsp; (<A target=_blank 
+            href="http://www.webclub.ru/archive/xml/724/ex03-4.xml">ex03-4.xml</A>, 
+            <A target=_blank 
+            href="http://www.webclub.ru/archive/xml/724/ex03-4.xsl">ex03-4.xsl</A>).</FONT></P>
+            <TABLE border=1>
+              <TBODY>
+              <TR bgColor=#cccccc>
+                <TD align=middle><STRONG>Кличка</STRONG></TD>
+                <TD align=middle><STRONG>Вес</STRONG></TD>
+                <TD align=middle><STRONG>Цвет</STRONG></TD></TR>
+              <TR bgColor=#f5f5f5>
+                <TD>Тузик</TD>
+                <TD align=right>10 кг</TD>
+                <TD>белый с черными пятнами</TD></TR>
+              <TR bgColor=#f5f5f5>
+                <TD>Шарик</TD>
+                <TD align=right>18 кг</TD>
+                <TD>рыжий с черными подпалинами</TD></TR>
+              <TR bgColor=#f5f5f5>
+                <TD>Бобик</TD>
+                <TD align=right>2 кг</TD>
+                <TD>бело-серый</TD></TR>
+              <TR bgColor=#f5f5f5>
+                <TD>Трезор</TD>
+                <TD align=right>25 кг</TD>
+                <TD>черный</TD></TR></TBODY></TABLE>
+            <P><FONT class=normal>Таблица действительно отсортирована по столбцу 
+            "вес", но это не числовая, а строковая сортировка! Для того, чтобы 
+            браузер воспринял значения как числа, ему необходимо об этом 
+            сказать, - вместо <FONT color=#800080>order-by="dogWeight"</FONT> 
+            необходимо написать <FONT 
+            color=#800080>order-by="number(dogWeight)"</FONT>. Теперь мы 
+            получили правильный результат (<A target=_blank 
+            href="http://www.webclub.ru/archive/xml/724/ex03-5.xml">ex03-5.xml</A>, 
+            <A target=_blank 
+            href="http://www.webclub.ru/archive/xml/724/ex03-5.xsl">ex03-5.xsl</A>).</FONT></P>
+            <TABLE border=1>
+              <TBODY>
+              <TR bgColor=#cccccc>
+                <TD align=middle><STRONG>Кличка</STRONG></TD>
+                <TD align=middle><STRONG>Вес</STRONG></TD>
+                <TD align=middle><STRONG>Цвет</STRONG></TD></TR>
+              <TR bgColor=#f5f5f5>
+                <TD>Бобик</TD>
+                <TD align=right>2 кг</TD>
+                <TD>бело-серый</TD></TR>
+              <TR bgColor=#f5f5f5>
+                <TD>Тузик</TD>
+                <TD align=right>10 кг</TD>
+                <TD>белый с черными пятнами</TD></TR>
+              <TR bgColor=#f5f5f5>
+                <TD>Шарик</TD>
+                <TD align=right>18 кг</TD>
+                <TD>рыжий с черными подпалинами</TD></TR>
+              <TR bgColor=#f5f5f5>
+                <TD>Трезор</TD>
+                <TD align=right>25 кг</TD>
+                <TD>черный</TD></TR></TBODY></TABLE>
+            <P><FONT class=normal>Приведем теперь пример сортировки по 
+            нескольким столбцам. Различные элементы в атрибуте <FONT 
+            color=#800080>order-by</FONT> должны разделяться символом "<FONT 
+            color=#800080>;</FONT>" - &nbsp; <FONT 
+            color=#800080>order-by="number(dogWeight); dogName"</FONT> (<A 
+            target=_blank 
+            href="http://www.webclub.ru/archive/xml/724/ex03-6.xml">ex03-6.xml</A>, 
+            <A target=_blank 
+            href="http://www.webclub.ru/archive/xml/724/ex03-6.xsl">ex03-6.xsl</A>). 
+            Таблица приведена ниже.</FONT></P>
+            <TABLE border=1>
+              <TBODY>
+              <TR bgColor=#cccccc>
+                <TD align=middle><STRONG>Кличка</STRONG></TD>
+                <TD align=middle><STRONG>Вес</STRONG></TD>
+                <TD align=middle><STRONG>Цвет</STRONG></TD></TR>
+              <TR bgColor=#f5f5f5>
+                <TD>Трезор</TD>
+                <TD align=right>10 кг</TD>
+                <TD>черный</TD></TR>
+              <TR bgColor=#f5f5f5>
+                <TD>Тузик</TD>
+                <TD align=right>10 кг</TD>
+                <TD>белый с черными пятнами</TD></TR>
+              <TR bgColor=#f5f5f5>
+                <TD>Бобик</TD>
+                <TD align=right>18 кг</TD>
+                <TD>бело-серый</TD></TR>
+              <TR bgColor=#f5f5f5>
+                <TD>Шарик</TD>
+                <TD align=right>18 кг</TD>
+                <TD>рыжий с черными подпалинами</TD></TR></TBODY></TABLE>
+            <P><FONT class=normal>Следующий пример работает только под 
+            управлением XML-парсера версии 3. В нем строки сортируются по одному 
+            столбцу - по кличке собаки. Этот пример уже приводился выше, однако 
+            теперь мы используем новый синтаксис (<A target=_blank 
+            href="http://www.webclub.ru/archive/xml/724/ex03-7.xml">ex03-7.xml</A>, 
+            <A target=_blank 
+            href="http://www.webclub.ru/archive/xml/724/ex03-7.xsl">ex03-7.xsl</A>).</FONT></P>
+            <P><FONT class=normal>Отметим разницу.</FONT></P>
+            <P><FONT class=normal>При использовании нового синтаксиса 
+            используется ссылка на другое пространство имен</FONT></P>
+            <BLOCKQUOTE>&lt;xsl:stylesheet version="1.0" xmlns:xsl="<FONT 
+              color=#ff0000>http://www.w3.org/1999/XSL/Transform</FONT>"&gt;</BLOCKQUOTE>
+            <P><FONT class=normal>Это очень важный момент, и его никогда нельзя 
+            упускать из виду.</FONT></P>
+            <P><FONT class=normal>Кроме того, мы убрали атрибут <FONT 
+            color=#800080>order-by</FONT> в элементе <FONT 
+            color=#800080>xsl:for-each</FONT> и добавили другой 
+            элемент</FONT></P>
+            <BLOCKQUOTE>&lt;xsl:sort order="ascending" 
+            select="dogName"/&gt;</BLOCKQUOTE>
+            <P><FONT class=normal>Если элемент </FONT><FONT class=normal 
+            color=#800080>xsl:</FONT><FONT class=normal><FONT 
+            color=#800080>sort</FONT> присутствует в элементе </FONT><FONT 
+            class=normal color=#800080>xsl:for-each</FONT><FONT class=normal>, 
+            то он всегда должен стоять сразу после элемента </FONT><FONT 
+            class=normal color=#800080>xsl:for-each</FONT><FONT class=normal>. 
+            Синтаксис элемента </FONT><FONT class=normal 
+            color=#800080>xsl:sort</FONT><FONT class=normal> достаточно 
+            очевиден. В нем используются два атрибута: атрибут <FONT 
+            color=#800080>order</FONT> - способ сортировки (по возрастанию или 
+            по убыванию) и атрибут <FONT color=#800080>select</FONT> - имя поля, 
+            по которому производится сортировка. Если нам нужно отсортировать по 
+            первому элементу, как в данном примере, то вместо "<FONT 
+            color=#800080>dogName</FONT>" можно было поставить точку - "<FONT 
+            color=#800080>.</FONT>", для других элементов нужно указывать его 
+            имя, например "<FONT color=#800080>dogColor</FONT>", если нам нужно 
+            отсортировать записи по цвету собаки. На самом деле атрибутов может 
+            быть пять - <FONT color=#800080>select</FONT>, <FONT 
+            color=#800080>lang</FONT>, <FONT color=#800080>data-type</FONT>, 
+            <FONT color=#800080>order</FONT> и <FONT 
+            color=#800080>case-order</FONT>, но мы не будем здесь рассматривать 
+            все эти атрибуты, поскольку здесь мы не преследуем цель дать полное 
+            описание всех элементов, используемых в XSL, и их 
+            атрибутов.</FONT></P>
+            <P><FONT class=normal>Таблица результатов приведена ниже.</FONT></P>
+            <TABLE border=1>
+              <TBODY>
+              <TR bgColor=#cccccc>
+                <TD align=middle><STRONG>Кличка</STRONG></TD>
+                <TD align=middle><STRONG>Вес</STRONG></TD>
+                <TD align=middle><STRONG>Цвет</STRONG></TD></TR>
+              <TR bgColor=#f5f5f5>
+                <TD>Бобик</TD>
+                <TD align=right>2 кг</TD>
+                <TD>бело-серый</TD></TR>
+              <TR bgColor=#f5f5f5>
+                <TD>Трезор</TD>
+                <TD align=right>25 кг</TD>
+                <TD>черный</TD></TR>
+              <TR bgColor=#f5f5f5>
+                <TD>Тузик</TD>
+                <TD align=right>10 кг</TD>
+                <TD>белый с черными пятнами</TD></TR>
+              <TR bgColor=#f5f5f5>
+                <TD>Шарик</TD>
+                <TD align=right>18 кг</TD>
+                <TD>рыжий с черными подпалинами</TD></TR></TBODY></TABLE>
+            <P><FONT class=normal>С использованием нового синтаксиса легко 
+            сменить сортировку по возрастанию на сортировку по убыванию (<A 
+            target=_blank 
+            href="http://www.webclub.ru/archive/xml/724/ex03-8.xml">ex03-8.xml</A>, 
+            <A target=_blank 
+            href="http://www.webclub.ru/archive/xml/724/ex03-8.xsl">ex03-8.xsl</A>). 
+            Этот пример работает только под управлением XML-парсера версии 
+            3.</FONT></P>
+            <P><FONT class=normal>Разница заключается в одной строке</FONT></P>
+            <BLOCKQUOTE>&lt;xsl:sort order="descending" 
+            select="dogName"/&gt;</BLOCKQUOTE>
+            <P><FONT class=normal>Мы изменили значение атрибут <FONT 
+            color=#800080>order</FONT> - значение <FONT 
+            color=#800080>ascending</FONT> заменено на <FONT 
+            color=#800080>descending</FONT>.</FONT></P>
+            <P><FONT class=normal>Таблица результатов приведена ниже.</FONT></P>
+            <TABLE border=1>
+              <TBODY>
+              <TR bgColor=#cccccc>
+                <TD align=middle><STRONG>Кличка</STRONG></TD>
+                <TD align=middle><STRONG>Вес</STRONG></TD>
+                <TD align=middle><STRONG>Цвет</STRONG></TD></TR>
+              <TR bgColor=#f5f5f5>
+                <TD>Шарик</TD>
+                <TD align=right>18 кг</TD>
+                <TD>рыжий с черными подпалинами</TD></TR>
+              <TR bgColor=#f5f5f5>
+                <TD>Тузик</TD>
+                <TD align=right>10 кг</TD>
+                <TD>белый с черными пятнами</TD></TR>
+              <TR bgColor=#f5f5f5>
+                <TD>Трезор</TD>
+                <TD align=right>25 кг</TD>
+                <TD>черный</TD></TR>
+              <TR bgColor=#f5f5f5>
+                <TD>Бобик</TD>
+                <TD align=right>2 кг</TD>
+                <TD>бело-серый</TD></TR></TBODY></TABLE>
+            <P><FONT class=normal>Покажем теперь сортировку по нескольким полям 
+            (<A target=_blank 
+            href="http://www.webclub.ru/archive/xml/724/ex03-9.xml">ex03-9.xml</A>, 
+            <A target=_blank 
+            href="http://www.webclub.ru/archive/xml/724/ex03-9.xsl">ex03-9.xsl</A>). 
+            Этот пример работает только под управлением XML-парсера версии 
+            3.</FONT></P>
+            <P><FONT class=normal>В этом примере у нас фигурируют две строки с 
+            элементом </FONT><FONT class=normal 
+            color=#800080>xsl:sort</FONT><FONT class=normal>.</FONT></P>
+            <BLOCKQUOTE>&lt;xsl:sort order="ascending" 
+              select="number(dogWeight)" data-type="number"/&gt;<BR>&lt;xsl:sort 
+              order="ascending" select="dogName"/&gt;</BLOCKQUOTE>
+            <P><FONT class=normal>Строки вначале сортируются по весу собаки, а 
+            затем по их кличкам в алфавитном порядке. Обратите внимание - для 
+            того, чтобы сортировка выполнялась в числовой последовательности, в 
+            элемент </FONT><FONT class=normal color=#800080>xsl:sort</FONT><FONT 
+            class=normal> мы добавили атрибут <FONT 
+            color=#800080>data-type</FONT>. Таблица результатов приведена 
+            ниже.</FONT></P>
+            <TABLE border=1>
+              <TBODY>
+              <TR bgColor=#cccccc>
+                <TD align=middle><STRONG>Кличка</STRONG></TD>
+                <TD align=middle><STRONG>Вес</STRONG></TD>
+                <TD align=middle><STRONG>Цвет</STRONG></TD></TR>
+              <TR bgColor=#f5f5f5>
+                <TD>Волчонок</TD>
+                <TD align=right>3 кг</TD>
+                <TD>темно-серый</TD></TR>
+              <TR bgColor=#f5f5f5>
+                <TD>Трезор</TD>
+                <TD align=right>10 кг</TD>
+                <TD>черный</TD></TR>
+              <TR bgColor=#f5f5f5>
+                <TD>Тузик</TD>
+                <TD align=right>10 кг</TD>
+                <TD>белый с черными пятнами</TD></TR>
+              <TR bgColor=#f5f5f5>
+                <TD>Бобик</TD>
+                <TD align=right>18 кг</TD>
+                <TD>бело-серый</TD></TR>
+              <TR bgColor=#f5f5f5>
+                <TD>Шарик</TD>
+                <TD align=right>18 кг</TD>
+                <TD>рыжий с черными подпалинами</TD></TR></TBODY></TABLE>
+            <P><FONT class=normal>Заменив значение атрибута<FONT color=#800080> 
+            order by</FONT> на <FONT color=#800080>descending</FONT>, мы легко 
+            сгруппируем записи о собаках с одинаковым весом так, что клички 
+            будут идти в обратном алфавитном порядке. Соответствующий пример вы 
+            легко построите сами.</FONT></P>
+            <TABLE border=1>
+              <TBODY>
+              <TR bgColor=#cccccc>
+                <TD align=middle><STRONG>Кличка</STRONG></TD>
+                <TD align=middle><STRONG>Вес</STRONG></TD>
+                <TD align=middle><STRONG>Цвет</STRONG></TD></TR>
+              <TR bgColor=#f5f5f5>
+                <TD>Волчонок</TD>
+                <TD align=right>3 кг</TD>
+                <TD>темно-серый</TD></TR>
+              <TR bgColor=#f5f5f5>
+                <TD>Тузик</TD>
+                <TD align=right>10 кг</TD>
+                <TD>белый с черными пятнами</TD></TR>
+              <TR bgColor=#f5f5f5>
+                <TD>Трезор</TD>
+                <TD align=right>10 кг</TD>
+                <TD>черный</TD></TR>
+              <TR bgColor=#f5f5f5>
+                <TD>Шарик</TD>
+                <TD align=right>18 кг</TD>
+                <TD>рыжий с черными подпалинами</TD></TR>
+              <TR bgColor=#f5f5f5>
+                <TD>Бобик</TD>
+                <TD align=right>18 кг</TD>
+                <TD>бело-серый</TD></TR></TBODY></TABLE>
+            <P>
+            <H4><A name=ResultSet-Filter>Элемент XSL:IF - фильтр</A></H4><FONT 
+            class=normal>Рассмотрим теперь способы фильтрации строк таблицы. 
+            Первый пример использует старый синтаксис. В нем условие фильтрации 
+            указывается непосредственно в атрибуте select (<A target=_blank 
+            href="http://www.webclub.ru/archive/xml/724/ex04-1.xml">ex04-1.xml</A>, 
+            <A target=_blank 
+            href="http://www.webclub.ru/archive/xml/724/ex04-1.xsl">ex04-1.xsl</A>).</FONT>
+            <P></P>
+            <P><FONT class=normal>Ниже приведена строка, в которую мы внесли 
+            необходимые изменения.</FONT></P>
+            <BLOCKQUOTE>xsl:for-each select="tutorial/enimals/dogs/dog<FONT 
+              color=#800080>[dogWeight$gt$10]</FONT> " 
+              order-by="number(dogWeight); dogName;"&gt;</BLOCKQUOTE>
+            <P><FONT class=normal>И таблица результатов.</FONT></P>
+            <TABLE border=1>
+              <TBODY>
+              <TR bgColor=#cccccc>
+                <TD align=middle><STRONG>Кличка</STRONG></TD>
+                <TD align=middle><STRONG>Вес</STRONG></TD>
+                <TD align=middle><STRONG>Цвет</STRONG></TD></TR>
+              <TR bgColor=#f5f5f5>
+                <TD>Шарик</TD>
+                <TD align=right>18 кг</TD>
+                <TD>рыжий с черными подпалинами</TD></TR>
+              <TR bgColor=#f5f5f5>
+                <TD>Трезор</TD>
+                <TD align=right>25 кг</TD>
+                <TD>черный</TD></TR></TBODY></TABLE>
+            <P><FONT class=normal>Вы видите, что в таблице остались только те 
+            собаки, чей вес превышает 10 кг, причем первым стоит Шарик, чей вес 
+            меньше.</FONT></P>
+            <P><FONT class=normal>Все дальнейшие примеры в этом параграфе 
+            работают только под управлением XML-парсера версии 3.</FONT></P>
+            <P><FONT class=normal>Более гибкие возможности нам предоставляет 
+            новый синтаксис (<A target=_blank 
+            href="http://www.webclub.ru/archive/xml/724/ex04-2.xml">ex04-2.xml</A>, 
+            <A target=_blank 
+            href="http://www.webclub.ru/archive/xml/724/ex04-2.xsl">ex04-2.xsl</A>). 
+            Обратите внимание - в новом синтаксисе атрибут <FONT 
+            color=#800080>order-by</FONT> в элементе <FONT 
+            color=#800080>xsl:for-each</FONT> не поддерживается, вместо него мы 
+            вставили два элемента </FONT><FONT class=normal 
+            color=#800080>xsl:sort</FONT><FONT class=normal>.</FONT></P>
+            <BLOCKQUOTE>&lt;xsl:sort order="ascending" 
+              select="number(dogWeight)"/&gt;<BR>&lt;xsl:sort order="ascending" 
+              select="dogName"/&gt;</BLOCKQUOTE>
+            <P><FONT class=normal>Кроме того, условие фильтра у нас вынесено в 
+            отдельный элемент <FONT color=#800080>xsl:if</FONT>.</FONT></P>
+            <BLOCKQUOTE>&lt;xsl:if test="dogWeight&amp;gt;10"&gt;</BLOCKQUOTE>
+            <P><FONT class=normal>Не забывайте указывать конечный тег элемента 
+            </FONT><FONT class=normal color=#800080>xsl:if</FONT><FONT 
+            class=normal>.</FONT></P>
+            <BLOCKQUOTE><FONT color=#800080>&lt;xsl:if 
+              test="dogWeight&amp;gt;10"&gt;</FONT><BR>&lt;tr 
+              bgcolor="#F5F5F5"&gt;<BR>&lt;td&gt;&lt;xsl:value-of 
+              select="dogName"/&gt;&lt;/td&gt;<BR>&lt;td 
+              align="right"&gt;&lt;xsl:value-of select="dogWeight"/&gt; 
+              &lt;xsl:value-of 
+              select="dogWeight/@caption"/&gt;&lt;/td&gt;<BR>&lt;td&gt;&lt;xsl:value-of 
+              select="dogColor"/&gt;&lt;/td&gt;<BR>&lt;/tr&gt;<BR><FONT 
+              color=#800080>&lt;/xsl:if&gt;</FONT></BLOCKQUOTE>
+            <P><FONT class=normal>В этом примере таблица результатов полностью 
+            аналогична предыдущей.</FONT></P>
+            <TABLE border=1>
+              <TBODY>
+              <TR bgColor=#cccccc>
+                <TD align=middle><STRONG>Кличка</STRONG></TD>
+                <TD align=middle><STRONG>Вес</STRONG></TD>
+                <TD align=middle><STRONG>Цвет</STRONG></TD></TR>
+              <TR bgColor=#f5f5f5>
+                <TD>Шарик</TD>
+                <TD align=right>18 кг</TD>
+                <TD>рыжий с черными подпалинами</TD></TR>
+              <TR bgColor=#f5f5f5>
+                <TD>Трезор</TD>
+                <TD align=right>25 кг</TD>
+                <TD>черный</TD></TR></TBODY></TABLE>
+            <P><FONT class=normal>Полностью преимущества нового синтаксиса 
+            проявляются при использовании функций. </FONT></P>
+            <P><FONT class=normal>Рассмотрим следующий пример (<A target=_blank 
+            href="http://www.webclub.ru/archive/xml/724/ex04-3.xml">ex04-3.xml</A>, 
+            <A target=_blank 
+            href="http://www.webclub.ru/archive/xml/724/ex04-3.xsl">ex04-3.xsl</A>). 
+            В этом примере используется функция <FONT 
+            color=#800080>position()</FONT>, определяющая порядковый номер 
+            фрагмента в исходном XML-файле.</FONT></P>
+            <P><FONT class=normal>Соответствующий элемент <FONT 
+            color=#800080>xsl:if</FONT>.</FONT></P>
+            <BLOCKQUOTE>&lt;xsl:if test="position()&lt;3"&gt;</BLOCKQUOTE>
+            <P><FONT class=normal>Результат.</FONT></P>
+            <TABLE border=1>
+              <TBODY>
+              <TR bgColor=#cccccc>
+                <TD align=middle><STRONG>Кличка</STRONG></TD>
+                <TD align=middle><STRONG>Вес</STRONG></TD>
+                <TD align=middle><STRONG>Цвет</STRONG></TD></TR>
+              <TR bgColor=#f5f5f5>
+                <TD>Шарик</TD>
+                <TD align=right>18 кг</TD>
+                <TD>рыжий с черными подпалинами</TD></TR>
+              <TR bgColor=#f5f5f5>
+                <TD>Тузик</TD>
+                <TD align=right>10 кг</TD>
+                <TD>белый с черными пятнами</TD></TR></TBODY></TABLE>
+            <P><FONT class=normal>Продемонстрируем теперь использование более 
+            интересных функций - <FONT 
+            color=#800080>start-with(string,startSubstring)</FONT> и <FONT 
+            color=#800080>contains(string,anySubstring)</FONT>. Функция <FONT 
+            color=#800080>start-with(string,startSubstring)</FONT> проверяет, 
+            начинается ли строка </FONT><FONT class=normal 
+            color=#800080>string</FONT><FONT class=normal> с подстроки 
+            &nbsp;</FONT><FONT class=normal 
+            color=#800080>startSubstring</FONT><FONT class=normal>. Пример - <A 
+            target=_blank 
+            href="http://www.webclub.ru/archive/xml/724/ex04-4.xml">ex04-4.xml</A>, 
+            <A target=_blank 
+            href="http://www.webclub.ru/archive/xml/724/ex04-4.xsl">ex04-4.xsl</A>).</FONT></P>
+            <P><FONT class=normal>Синтаксис элемента<FONT color=#800080> 
+            xsl:if</FONT>.</FONT></P>
+            <P>&lt;xsl:if test="starts-with($varDogName,$varStartWith)"&gt;</P>
+            <P><FONT class=normal>В этом элементе мы использовали переменные. 
+            Значения переменных были инициализированы ранее</FONT></P>
+            <BLOCKQUOTE>&lt;xsl:variable 
+              name="varStartWith"&gt;&lt;xsl:value-of 
+              select="//letter"/&gt;&lt;/xsl:variable&gt;<BR>&lt;xsl:for-each 
+              select="tutorial/enimals/dogs/dog"&gt;<BR>&lt;xsl:variable 
+              name="varDogName"&gt;&lt;xsl:value-of 
+              select="dogName"/&gt;&lt;/xsl:variable&gt;</BLOCKQUOTE>
+            <BLOCKQUOTE><FONT class=normal>Переменная <FONT 
+              color=#800080>varStartWith</BLOCKQUOTE>представляет собой подстроку, 
+            с которой должны начинаться требуемые нам клички. Она не меняется, 
+            поэтому инициализируется перед циклом. Переменная <FONT 
+            color=#800080>varDogName</FONT> содержит кличку собаки, она меняется 
+            на каждом шаге цикла и, соответственно, инициализируется в теле 
+            цикла.</FONT>
+            <P></P>
+            <BLOCKQUOTE><FONT class=normal>Элемент <FONT 
+              color=#800080>letter</FONT> XML-файла содержит букву "<FONT 
+              color=#800080>Т</FONT>".</FONT></BLOCKQUOTE>
+            <P><EM><FONT class=normal><STRONG>Замечание.</STRONG><BR>К 
+            сожалению, мне не удалось найти другого способа переправить в 
+            функцию start-with значения элементов XML-файла. С этим еще как-то 
+            можно смириться. Но точно так же не удалось использовать русские 
+            буквы в XSL-файлах, поэтому подстроку для сравнения пришлось 
+            формировать очень искусственным способом, извлекая ее из XML-файла. 
+            С этим смириться трудно, поэтому если мне удастся найти более 
+            элегантный способ, я изменю пример, а если такой способ найдет 
+            кто-то из читателей, - напишите, пожалуйста, мне об этом. Хотя в 
+            реальных примерах подобные подстроки обычно вводятся пользователем в 
+            формах поиска, поэтому, возможно, найденный способ вполне приемлем 
+            для практических нужд.</FONT></EM></P>
+            <P><FONT class=normal>Результат.</FONT></P>
+            <TABLE border=1>
+              <TBODY>
+              <TR bgColor=#cccccc>
+                <TD align=middle><STRONG>Кличка</STRONG></TD>
+                <TD align=middle><STRONG>Вес</STRONG></TD>
+                <TD align=middle><STRONG>Цвет</STRONG></TD></TR>
+              <TR bgColor=#f5f5f5>
+                <TD>Тузик</TD>
+                <TD align=right>10 кг</TD>
+                <TD>белый с черными пятнами</TD></TR>
+              <TR bgColor=#f5f5f5>
+                <TD>Трезор</TD>
+                <TD align=right>25 кг</TD>
+                <TD>черный</TD></TR></TBODY></TABLE>
+            <P><FONT class=normal>Функция <FONT 
+            color=#800080>contains(string,anySubstring)</FONT> проверяет, 
+            содержит ли строка </FONT><FONT class=normal 
+            color=#800080>string</FONT><FONT class=normal> подстроку 
+            &nbsp;</FONT><FONT class=normal 
+            color=#800080>anySubstring</FONT><FONT class=normal>. Пример - <A 
+            target=_blank 
+            href="http://www.webclub.ru/archive/xml/724/ex04-5.xml">ex04-5.xml</A>, 
+            <A target=_blank 
+            href="http://www.webclub.ru/archive/xml/724/ex04-5.xsl">ex04-5.xsl</A>.</FONT></P>
+            <P><FONT class=normal>Синтаксис элемента<FONT color=#800080> 
+            xsl:if</FONT>.</FONT></P>
+            <BLOCKQUOTE>&lt;xsl:if 
+            test="contains($varDogName,$varStartWith)"&gt;</BLOCKQUOTE>
+            <P><FONT class=normal>Этот пример полностью аналогичен предыдущему. 
+            Элемент <FONT color=#800080>letter</FONT> XML-файла содержит букву 
+            "<FONT color=#800080>о</FONT>".</FONT></P>
+            <P><FONT class=normal>Результат.</FONT></P>
+            <TABLE border=1>
+              <TBODY>
+              <TR bgColor=#cccccc>
+                <TD align=middle><STRONG>Кличка</STRONG></TD>
+                <TD align=middle><STRONG>Вес</STRONG></TD>
+                <TD align=middle><STRONG>Цвет</STRONG></TD></TR>
+              <TR bgColor=#f5f5f5>
+                <TD>Бобик</TD>
+                <TD align=right>2 кг</TD>
+                <TD>бело-серый</TD></TR>
+              <TR bgColor=#f5f5f5>
+                <TD>Трезор</TD>
+                <TD align=right>25 кг</TD>
+                <TD>черный</TD></TR></TBODY></TABLE>
+            <P><FONT class=normal>Два элемента <FONT 
+            color=#800080>xsl:if</FONT>, вложенные друг в друга, дают нам эффект 
+            оператора <FONT color=#800080>AND</FONT> (<A target=_blank 
+            href="http://www.webclub.ru/archive/xml/724/ex04-6.xml">ex04-6.xml</A>, 
+            <A target=_blank 
+            href="http://www.webclub.ru/archive/xml/724/ex04-6.xsl">ex04-6.xsl</A>).</FONT></P>
+            <P><FONT class=normal>Соответствующий фрагмент XSL-файла.</FONT></P>
+            <BLOCKQUOTE>&lt;xsl:if 
+              test="dogWeight&amp;gt;10"&gt;<BR>&lt;xsl:if 
+              test="dogWeight&amp;lt;20"&gt;<BR>...<BR>&lt;/xsl:if&gt;<BR>&lt;/xsl:if&gt;</BLOCKQUOTE>
+            <P><FONT class=normal>Результат.</FONT></P>
+            <TABLE border=1>
+              <TBODY>
+              <TR bgColor=#cccccc>
+                <TD align=middle><STRONG>Кличка</STRONG></TD>
+                <TD align=middle><STRONG>Вес</STRONG></TD>
+                <TD align=middle><STRONG>Цвет</STRONG></TD></TR>
+              <TR bgColor=#f5f5f5>
+                <TD>Шарик</TD>
+                <TD align=right>18 кг</TD>
+                <TD>рыжий с черными подпалинами</TD></TR></TBODY></TABLE>
+            <P><FONT class=normal>Можно добиться и эффекта оператора OR. Для 
+            этого нам нужно включить два цикла, в каждом из которых формируется 
+            своя выборка &nbsp; (<A target=_blank 
+            href="http://www.webclub.ru/archive/xml/724/ex04-7.xml">ex04-7.xml</A>, 
+            <A target=_blank 
+            href="http://www.webclub.ru/archive/xml/724/ex04-7.xsl">ex04-7.xsl</A>).</FONT></P>
+            <P><FONT class=normal>Соответствующий фрагмент XSL-файла.</FONT></P>
+            <BLOCKQUOTE><FONT color=#800080>&lt;xsl:for-each 
+              select="tutorial/enimals/dogs/dog"&gt;</FONT><BR>&lt;xsl:sort 
+              order="ascending" select="number(dogWeight)"/&gt;<BR><FONT 
+              color=#800080>&lt;xsl:if 
+              test="dogWeight&amp;lt;10"&gt;</FONT><BR>&lt;tr 
+              bgcolor="#F5F5F5"&gt;<BR>&lt;td&gt;&lt;xsl:value-of 
+              select="dogName"/&gt;&lt;/td&gt;<BR>&lt;td 
+              align="right"&gt;&lt;xsl:value-of select="dogWeight"/&gt; 
+              &lt;xsl:value-of 
+              select="dogWeight/@caption"/&gt;&lt;/td&gt;<BR>&lt;td&gt;&lt;xsl:value-of 
+              select="dogColor"/&gt;&lt;/td&gt;<BR>&lt;/tr&gt;<BR><FONT 
+              color=#800080>&lt;/xsl:if&gt;</FONT><BR><FONT 
+              color=#800080>&lt;/xsl:for-each&gt;</FONT><BR><FONT 
+              color=#800080>&lt;xsl:for-each 
+              select="tutorial/enimals/dogs/dog"&gt;</FONT><BR>&lt;xsl:sort 
+              order="ascending" select="number(dogWeight)"/&gt;<BR><FONT 
+              color=#800080>&lt;xsl:if 
+              test="dogWeight&amp;gt;15"&gt;</FONT><BR>&lt;tr 
+              bgcolor="#F5F5F5"&gt;<BR>&lt;td&gt;&lt;xsl:value-of 
+              select="dogName"/&gt;&lt;/td&gt;<BR>&lt;td 
+              align="right"&gt;&lt;xsl:value-of select="dogWeight"/&gt; 
+              &lt;xsl:value-of 
+              select="dogWeight/@caption"/&gt;&lt;/td&gt;<BR>&lt;td&gt;&lt;xsl:value-of 
+              select="dogColor"/&gt;&lt;/td&gt;<BR>&lt;/tr&gt;<BR><FONT 
+              color=#800080>&lt;/xsl:if&gt;</FONT><BR><FONT 
+              color=#800080>&lt;/xsl:for-each&gt;</FONT></BLOCKQUOTE>
+            <P><FONT class=normal>Результат.</FONT></P>
+            <TABLE border=1>
+              <TBODY>
+              <TR bgColor=#cccccc>
+                <TD align=middle><STRONG>Кличка</STRONG></TD>
+                <TD align=middle><STRONG>Вес</STRONG></TD>
+                <TD align=middle><STRONG>Цвет</STRONG></TD></TR>
+              <TR bgColor=#f5f5f5>
+                <TD>Бобик</TD>
+                <TD align=right>2 кг</TD>
+                <TD>бело-серый</TD></TR>
+              <TR bgColor=#f5f5f5>
+                <TD>Шарик</TD>
+                <TD align=right>18 кг</TD>
+                <TD>рыжий с черными подпалинами</TD></TR>
+              <TR bgColor=#f5f5f5>
+                <TD>Трезор</TD>
+                <TD align=right>25 кг</TD>
+                <TD>черный</TD></TR></TBODY></TABLE>
+            <P><FONT class=normal>Если сортировка не требуется, то можно 
+            вставить два элемента <FONT color=#800080>xsl:if</FONT> в один 
+            элемент <FONT color=#800080>xsl:for-each</FONT>.</FONT></P>
+            <P>
+            <H4><A name=ResultSet-DynamicDesign>Элемент XSL:IF - улучшение 
+            внешнего вида таблиц </A></H4><FONT class=normal>Элемент <FONT 
+            color=#800080>xsl:if</FONT> можно применять не только для фильтрации 
+            строк выборки. Очевидно, что он может быть полезен и во многих 
+            других областях. В этом параграфе мы разберем пример использования 
+            элемента <FONT color=#800080>xsl:if</FONT> для улучшения внешнего 
+            вида таблицы. Заодно мы продемонстрируем реальное использование 
+            функции </FONT><FONT class=normal 
+            color=#800080>position()</FONT><FONT class=normal>. Мы будем 
+            использовать эту функцию для того, чтобы чередовать цвет четных и 
+            нечетных строк таблицы&nbsp; (<A target=_blank 
+            href="http://www.webclub.ru/archive/xml/724/ex04-8.xml">ex04-8.xml</A>, 
+            <A target=_blank 
+            href="http://www.webclub.ru/archive/xml/724/ex04-8.xsl">ex04-8.xsl</A>).</FONT>
+            <P></P>
+            <P><FONT class=normal>Фрагмент XSL-файла, который отвечает за 
+            требуемое чередование.</FONT></P>
+            <BLOCKQUOTE>&lt;tr&gt;<BR>&lt;xsl:if test="<FONT 
+              color=#800080>position() mod 2 = 
+              0</FONT>"&gt;<BR>&lt;xsl:attribute 
+              name="bgcolor"&gt;#CCCCCC&lt;/xsl:attribute&gt;<BR>&lt;/xsl:if&gt;</BLOCKQUOTE>
+            <P><FONT class=normal>С элементом <FONT color=#800080>xsl:if</FONT> 
+            и с функцией </FONT><FONT class=normal 
+            color=#800080>position()</FONT><FONT class=normal> мы уже знакомы. 
+            Оператор <FONT color=#800080>mod</FONT> дает нам остаток от деления 
+            на 2. А элемент </FONT><FONT class=normal 
+            color=#800080>xsl:attribute</FONT><FONT class=normal> позволяет нам 
+            динамически подставлять в файл результатов различные атрибуты. Это 
+            очень мощный элемент, мы разберем еще одно применение этого элемента 
+            в следующем параграфе. А сейчас приведем для полноты картины таблицу 
+            результатов.</FONT></P>
+            <TABLE border=1>
+              <TBODY>
+              <TR bgColor=#cccccc>
+                <TD align=middle><STRONG>Кличка</STRONG></TD>
+                <TD align=middle><STRONG>Вес</STRONG></TD>
+                <TD align=middle><STRONG>Цвет</STRONG></TD></TR>
+              <TR bgColor=#f5f5f5>
+                <TD>Шарик</TD>
+                <TD align=right>18 кг</TD>
+                <TD>рыжий с черными подпалинами</TD></TR>
+              <TR bgColor=#cccccc>
+                <TD>Тузик</TD>
+                <TD align=right>10 кг</TD>
+                <TD>белый с черными пятнами</TD></TR>
+              <TR bgColor=#f5f5f5>
+                <TD>Бобик</TD>
+                <TD align=right>2 кг</TD>
+                <TD>бело-серый</TD></TR>
+              <TR bgColor=#cccccc>
+                <TD>Трезор</TD>
+                <TD align=right>25 кг</TD>
+                <TD>черный</TD></TR></TBODY></TABLE>
+            <P>
+            <H3><A name=DynamicAttribute>Динамическое формирование атрибутов на 
+            примере параметров ссылки в теге &lt;a&gt;</A></H3><FONT 
+            class=normal>Предположим теперь, что в каждой строке таблицы нам 
+            нужно сделать ссылку на некоторую страницу и передать на эту 
+            страницу два параметра - кличку и вес собаки. Понятно, что для 
+            каждой строки эти параметры - свои, и их нельзя прописать явно в 
+            XSL-файл. Тем не менее задача легко решается при помощи элемента 
+            </FONT><FONT class=normal color=#800080>xsl:attribute</FONT><FONT 
+            class=normal>.</FONT>
+            <P></P>
+            <P><FONT class=normal>Мы не будем здесь строить специальный пример, 
+            ограничимся только соответствующим фрагментом XSL-файла.</FONT></P>
+            <BLOCKQUOTE>&lt;td&gt;<BR><FONT color=#800080>&lt;!-- Create 
+              reference to display details. Parameters - Dog Name and Dog Weight 
+              --&gt;</FONT><BR><FONT color=#800080>&lt;a 
+              target="_blank"&gt;</FONT><BR>&lt;<FONT 
+              color=#800080>xsl:attribute 
+              name="href"</FONT>&gt;DisplayDetails.html?dogName=&lt;xsl:value-of 
+              select="dogName"/&gt;<FONT 
+              color=#800080>&amp;amp;</FONT>dogWeight=&lt;xsl:value-of 
+              select="dogWeight"/&gt;&lt;/xsl:attribute&gt;<BR>&lt;<FONT 
+              color=#800080>xsl:attribute name="title"</FONT>&gt;To view some 
+              more details about &lt;xsl:value-of select="dogName"/&gt; click to 
+              dog name&lt;/xsl:attribute&gt;<BR>&lt;xsl:value-of 
+              select="dogName"/&gt;<BR><FONT 
+              color=#800080>&lt;/a&gt;</FONT><BR>&lt;/td&gt;</BLOCKQUOTE>
+            <P><FONT class=normal>В этом примере в ячейке таблицы мы размещаем 
+            ссылку на страницу с подробными описаниями. Ссылка указывается в 
+            атрибуте <FONT color=#800080>href</FONT> тега <FONT 
+            color=#800080>&lt;a&gt;</FONT>. Поскольку&nbsp; на страницу 
+            передаются два параметра, значения которых берутся из XML-файла, 
+            этот атрибут формируется динамически. Обратите также внимание - 
+            символ <FONT color=#800080>&amp;</FONT> (амперсанд), разделяющий 
+            передаваемые параметры, записывается в XSL-файле в виде <FONT 
+            color=#800080>&amp;amp;</FONT>. Во втором атрибуте нам нужна 
+            всплывающая подсказка (атрибут <FONT color=#800080>title</FONT>), 
+            которая появляется при наведении курсора мыши на ссылку. Текст этой 
+            подсказки тоже меняется динамически. Наконец, статический атрибут 
+            <FONT color=#800080>target</FONT> мы разместили непосредственно в 
+            теге <FONT color=#800080>&lt;a&gt;</FONT>.</FONT></P>
+            <P><FONT class=normal>И, наконец, мы ознакомились с комментариями в 
+            XSL-файлах. Это вторая строка приведенного фрагмента.</FONT></P>
+            <BLOCKQUOTE>&lt;!-- Create reference to display details. 
+              Parameters - Dog Name and Dog Weight --&gt;</BLOCKQUOTE>
+            <P><FONT class=normal>На этом мы завершим рассмотрение возможностей 
+            чистого XSLT и перейдем к последнему параграфу в этом документе - к 
+            динамическому изменению содержимого Web-страницы при помощи 
+            возможностей JavaScript и XML/XSLT без каких-либо дополнительных 
+            обращений к базе данных.</FONT></P>
+            <P>
+            <H3><A name=JavaScript>JavaScript и XML</A> </H3>
+            <P><FONT class=normal>Объединим теперь наши знания XML с 
+            возможностями, которые нам предоставляет JavaScript. Предположим, 
+            что нам нужно иметь возможность динамически изменять сортировку 
+            столбцов таблицы при щелчке на заголовке того или иного столбца. 
+            Понятно, что для этого нам нужно иметь один XML-файл, содержащий 
+            строки таблицы, несколько XSL-файлов, каждый из которых содержит 
+            требуемую сортировку и нечто, что объединит это все вместе и 
+            заставит работать.</FONT></P>
+            <P><FONT class=normal>Перейдем к реализации этой 
+            программы.</FONT></P>
+            <P><FONT class=normal>В качестве XML-файла возьмем привычный нам 
+            файл со списком собак - <A target=_blank 
+            href="http://www.webclub.ru/archive/xml/724/ex05-1.xml">ex05-1.xml</A>. 
+            Обратите внимание - мы убрали из файла ссылку на XSL-файл - нам 
+            нужно менять шаблон преобразования динамически.</FONT></P>
+            <P><FONT class=normal>Создадим также три XSL-файла, в каждом из 
+            которых у нас будет свой элемент <FONT 
+            color=#800080>xsl:sort</FONT>, задающий сортировку строк - <A 
+            target=_blank 
+            href="http://www.webclub.ru/archive/xml/724/ex05-1a.xsl">ex05-1a.xsl</A>, 
+            <A target=_blank 
+            href="http://www.webclub.ru/archive/xml/724/ex05-1b.xsl">ex05-1b.xsl</A>, 
+            <A target=_blank 
+            href="http://www.webclub.ru/archive/xml/724/ex05-1c.xsl">ex05-1c.xsl</A>.</FONT></P>
+            <P><FONT class=normal>Приведем здесь текст элемента <FONT 
+            color=#800080>xsl:sort</FONT> для каждого файла</FONT></P>
+            <BLOCKQUOTE>&lt;xsl:sort order="ascending" 
+            select="dogName"/&gt;</BLOCKQUOTE>
+            <BLOCKQUOTE>&lt;xsl:sort order="ascending" 
+              select="number(dogWeight)" data-type="number"/&gt;</BLOCKQUOTE>
+            <BLOCKQUOTE>&lt;xsl:sort order="ascending" 
+            select="dogColor"/&gt;</BLOCKQUOTE>
+            <P><FONT class=normal>Теперь нам осталось только объединить все это 
+            вместе. Ниже мы полностью приводим текст файла <A target=_blank 
+            href="http://www.webclub.ru/archive/xml/724/ex05-1.htm">ex05-1.htm</A>, 
+            сопроводив его необходимыми комментариями.</FONT></P>
+            <BLOCKQUOTE>&lt;html&gt;<BR>&lt;head&gt;<BR>&lt;script 
+              language="JavaScript"&gt;<BR><BR>var source;<BR>var 
+            style;<BR></BLOCKQUOTE><EM><FONT class=normal>Функция инициализации 
+            необходимых объектов. В этой же функции выводится первоначальный 
+            вариант на экран.</FONT></EM><BR>
+            <BLOCKQUOTE>function init() {</BLOCKQUOTE><EM><FONT 
+            class=normal>Создаем объект для файла - источника 
+            данных.</FONT></EM> 
+            <BLOCKQUOTE>source = new 
+              ActiveXObject("Microsoft.XMLDOM");<BR>source.async = 
+            false;</BLOCKQUOTE><EM><FONT class=normal>Создаем объект для файла с 
+            шаблоном преобразования (для файла стиля).</FONT></EM> 
+            <BLOCKQUOTE>style = new 
+              ActiveXObject("Microsoft.XMLDOM");<BR>style.async = 
+            false;</BLOCKQUOTE><EM><FONT class=normal>Загружаем записи в файл - 
+            источник данных.Записи берем из существующего XML-файла.</FONT></EM> 
+
+            <BLOCKQUOTE>source.load("ex05-1.xml");</BLOCKQUOTE><EM><FONT 
+            class=normal>Загружаем файл стиля. Первоначальная сортировка - по 
+            цвету.</FONT></EM> 
+            <BLOCKQUOTE>style.load("ex05-1a.xsl");</BLOCKQUOTE><EM><FONT 
+            class=normal>Теперь нам нужно вывести информацию на экран. 
+            Внимательно проанализируйте синтаксис и запомните его.</FONT></EM> 
+            <BLOCKQUOTE>document.all.item("xslresult").innerHTML = 
+              source.transformNode(style);<BR>return 
+            true;</BLOCKQUOTE>}<BR><BR><EM><FONT class=normal>Сортируем записи 
+            по кличке.</FONT></EM> 
+            <BLOCKQUOTE>function orderByNick() 
+              {<BR>style.load("ex05-1a.xsl");<BR>document.all.item("xslresult").innerHTML 
+              = source.transformNode(style);<BR>return 
+            true;<BR>}<BR></BLOCKQUOTE><EM><FONT class=normal>Сортируем записи 
+            по весу.</FONT></EM> 
+            <BLOCKQUOTE>function orderByWeight() 
+              {<BR>style.load("ex05-1b.xsl");<BR>document.all.item("xslresult").innerHTML 
+              = source.transformNode(style);<BR>return 
+            true;<BR>}<BR></BLOCKQUOTE><EM><FONT class=normal>Сортируем записи 
+            по цвету.</FONT></EM> 
+            <BLOCKQUOTE>function orderByColor() 
+              {<BR>style.load("ex05-1c.xsl");<BR>document.all.item("xslresult").innerHTML 
+              = source.transformNode(style);<BR>return 
+              true;<BR>}<BR><BR>&lt;/script&gt;<BR>&lt;/head&gt;</BLOCKQUOTE><EM><FONT 
+            class=normal>При загрузке страницы создадим все необходимые объекты 
+            и выведем первоначальный вариант на экран.</FONT></EM> 
+            <BLOCKQUOTE>&lt;body onLoad="init()"&gt;<BR>&lt;div 
+              id="xslresult"&gt;<BR>&lt;!-- Здесь будет размещаться 
+              окончательный вариант HTML-содержимого&nbsp; 
+              --&gt;<BR>&lt;/div&gt;<BR>&lt;/body&gt;<BR>&lt;/html&gt;<BR></BLOCKQUOTE><FONT 
+            class=normal>Мы добились своей цели - при щелчке мышью на заголовке 
+            столбца строки сортируются в соответствии со значениями в выбранном 
+            столбце.</FONT>
+            <P></P>&lt;&gt;<FONT class=normal>В заключение приведем реальный 
+            пример из складской системы. По своим функциональным возможностям 
+            этот пример полностью аналогичен предыдущему, детали только в 
+            реализации JavaScript-функций и в конкретных данных.</FONT>
+            <P></P>
+            <P><FONT class=normal>Основная страница - <A target=_blank 
+            href="http://www.webclub.ru/archive/xml/724/Mgr.html">Mgr.html</A>. 
+            Эта страница содержит два фрейма - <A target=_blank 
+            href="http://www.webclub.ru/archive/xml/724/mgrtop.txt">MgrTop.html</A> 
+            (страница управления, содержащая все JavaScript-функции) и <A 
+            target=_blank 
+            href="http://www.webclub.ru/archive/xml/724/MgrMain.html">MgrMain.html</A> 
+            - страница-пустышка, в которую в дальнейшем подставляется результат 
+            преобразования XML-файла. Страница данных - <A target=_blank 
+            href="http://www.webclub.ru/archive/xml/724/MgrMainXml.xml">MgrMainXml.xml</A>. 
+            Эти данные получены в результате запроса к реальной базе данных. Для 
+            разработчиков на Cache приведем текст CSP-страницы, которая служит 
+            источником данных - <A target=_blank 
+            href="http://www.webclub.ru/archive/xml/724/MgrMainXml.txt">MgrMainXml.csp</A>. 
+            Мы пошли на некоторые ухищрения и вместо реальных страниц 
+            MgrTop.html и MgrMainXml.csp подгружаем их копии с расширением *.txt 
+            для того, чтобы в браузере можно было увидеть непосредственно 
+            исходный код страницы. Сами страницы MgrTop.html и MgrMainXml.csp 
+            тоже присутствуют в соответствующей директории, при этом MgrTop.html 
+            работает в нашем примере, а MgrMainXml.csp, естественно, бесполезна 
+            без Cache-сервера.</FONT></P>
+            <P><FONT class=normal>На этом наше введение в XML-XSLT 
+            заканчивается.</FONT></P>
+            <P>
+            <H3><A name=Remarks>Заключительные замечания</A></H3>
+            <P><FONT class=normal>В процессе работы над этим документом 
+            использовались примеры Microsoft и примеры с сайта <A 
+            href="http://www.zvon.org/">http://www.zvon.org/</A>. Рекомендую 
+            всем, кто интересуется Web-технологиями, посетить этот сайт. Вы 
+            найдете там полные руководства и большое количество примеров по 
+            HTML, CSS, различным аспектам XML и т.п. Все материалы на английском 
+            языке. Многие документы, например, <A 
+            href="http://www.zvon.org/index.php?nav_id=downloads&amp;mime=html">XSLT 
+            Reference</A> можно скачать в виде архива и держать под 
+            рукой.</FONT></P>
+            <P><FONT class=normal>Рекомендую также русскоязычный перевод 
+            спецификации "Язык преобразований XSL 1.0" (XSL Transformations 
+            1.0), расположенный по адресу <A 
+            href="http://www.online.ru/it/helpdesk/xslt01.htm">http://www.online.ru/it/helpdesk/xslt01.htm</A>.</FONT></P>
+            <P><FONT class=normal>Надеемся, что информации, приведенной в этом 
+            документе в совокупности с вашей фантазией и XSLT Reference, вам 
+            будет достаточно для воплощения в жизнь самых смелых 
+            замыслов.</FONT></P><!-- /content --><BR></FONT></TD>
+          <TD class=news vAlign=top>
+            <P>Если вы заняты в сфере веб-разработок, то вам также могут быть 
+            полезны следующие ресурсы:</P>
+            <P><STRONG>Российские сайты:</STRONG></P>
+            <UL>
+              <LI><A href="http://www.webmascon.com/">webmascon.com</A> — журнал 
+              для веб-мастеров 
+              <LI><A href="http://www.xpoint.ru/">XPoint.ru</A> — форум 
+              профессиональных веб-разработчиков 
+              <LI><A href="http://www.citforum.ru/">ЦИТ-Форум</A> </LI></UL>
+            <P><STRONG>Зарубежные сайты:</STRONG></P>
+            <UL>
+              <LI><A href="http://www.evolt.org/">Evolt.org</A> </LI></UL>
+            <P><STRONG>Информационные ресурсы:</STRONG></P>
+            <UL>
+              <LI><A href="http://www.alistapart.com/">A List Apart</A> 
+              <LI><A href="http://www.tomalak.org/">Tomalak's Realm</A> 
+              <LI><A href="http://www.digital-web.com/">Digital Web</A> 
+          </LI></UL></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE>
+<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+  <TBODY>
+  <TR>
+    <TD>
+      <TABLE cellSpacing=0 cellPadding=0 border=0>
+        <TBODY>
+        <TR>
+          <TD>
+            <TABLE height=10 cellSpacing=0 cellPadding=0 width=1 border=0>
+              <TBODY>
+              <TR>
+                <TD></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE>
+<TABLE cellSpacing=0 cellPadding=5 width="100%" border=0>
+  <TBODY>
+  <TR>
+    <TD class=footer vAlign=top width="50%">
+      <P>Инициативная группа <NOBR><B>webclub.ru</B>. [<A 
+      onmouseover="this.href='mail'+'to:'+'devteam'+'@'+'webclub'+'.ru'" 
+      href="http://www.webclub.ru/archive/xml/article-724.html#">электропочта</A>]</NOBR></P>
+      <P>Хостинг предоставлен <NOBR>агентством <B><A 
+      href="http://www.maverick.ru/">МАВЕРИК</A></B></NOBR></P></TD>
+    <TD class=footer vAlign=top align=right><A 
+      href="http://www.webclub.ru/project_origin.html">Первоначальная идея 
+      проекта</A></TD></TR></TBODY></TABLE></BODY></HTML>
