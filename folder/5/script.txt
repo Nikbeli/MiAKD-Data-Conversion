@@ -26,8 +26,8 @@ INSERT INTO Genre VALUES
 
 INSERT INTO Employee VALUES
 (1, 3, 'Иванов Иван Иванович'),
-(2, 2, 'Медведев Евгений Юрьевич'),
-(3, 1, 'Михайлова Юлия Вадимовна')
+(2, 2, 'Скалкин Евгений Юрьевич'),
+(3, 1, 'Шамшева Юлия Вадимовна')
 
 INSERT INTO Book VALUES
 (1, 1, 'Преступление и наказание', 'Ф.М.Достоевский'),
@@ -35,9 +35,9 @@ INSERT INTO Book VALUES
 (3, 2, 'Улитка на склоне', 'Братья Стругацкие'),
 (4, 3, 'Любовь хулигана', 'С.А.Есенин')
 
-COPY (SELECT table_to_xml('Genre', true, false, '')) to 'E:\MiAKD\Lab 5-6\genre.xml';
-COPY (SELECT table_to_xml('Employee', true, false, '')) to 'E:\MiAKD\Lab 5-6\employee.xml';
-COPY (SELECT table_to_xml('Book', true, false, '')) to 'E:\MiAKD\Lab 5-6\book.xml';
+COPY (SELECT table_to_xml('Genre', true, false, '')) to 'E:/genre.xml';
+COPY (SELECT table_to_xml('Employee', true, false, '')) to 'E:/employee.xml';
+COPY (SELECT table_to_xml('Book', true, false, '')) to 'E:/book.xml';
 
 
 
