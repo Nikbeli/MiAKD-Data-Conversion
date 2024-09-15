@@ -1,0 +1,33 @@
+<?xml-stylesheet type="text/xml" href="library.xsl" version="2.0"?>
+
+<book xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+<row>
+  <bookid>1</bookid>
+  <genreid>1</genreid>
+  <title>Преступление и наказание</title>
+  <author>Ф.М.Достоевский</author>
+</row>
+
+<row>
+  <bookid>2</bookid>
+  <genreid>1</genreid>
+  <title>Мёртвые души</title>
+  <author>Н.В.Гоголь</author>
+</row>
+
+<row>
+  <bookid>3</bookid>
+  <genreid>2</genreid>
+  <title>Улитка на склоне</title>
+  <author>Братья Стругацкие</author>
+</row>
+
+<row>
+  <bookid>4</bookid>
+  <genreid>3</genreid>
+  <title>Любовь хулигана</title>
+  <author>С.А.Есенин</author>
+</row>
+
+</book>
